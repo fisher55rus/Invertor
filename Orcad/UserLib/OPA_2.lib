@@ -1,0 +1,2 @@
+.model Sbreak VSWITCH Roff=1e6 Ron=1.0 Voff=0.0 Von=0.1 
+*$

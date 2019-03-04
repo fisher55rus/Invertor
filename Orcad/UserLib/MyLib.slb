@@ -1,0 +1,230 @@
+*version 9.2 53317823
+@index
+symloc TL431 0 757
+symloc AD633 757 1291
+symloc HCPL3180 2048 1176
+symloc OPA_1 3224 760
+symloc OPA_2 3984 901
+*symbol TL431
+d 3-connection subckt symbol
+@type p 9.2
+@attributes
+a 0 sp 9 0 8 -2 hln 100 REFDES=U?
+a 0 sp 11 0 18 38 hrn 100 PART=TL431
+a 0 sp 0 0 0 0 hln 100 MODEL=TL431
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@REFDES %1 %2 %3 @MODEL
+@pins
+p 0 13 22 hln 100 1 n 0 20 h
+a 0 s 0:1 0 5 18 hrn 100 PIN=1
+a 0 s 0 0 0 20 hln 100 ERC=b
+a 0 s 0 0 0 20 hln 100 FLOAT=e
+p 0 22 17 vln 100 2 n 20 30 v
+a 0 s 0:1 0 18 25 vrn 100 PIN=2
+a 0 s 0 0 10 30 hln 100 ERC=b
+a 0 s 0 0 10 30 hln 100 FLOAT=e
+p 0 18 13 dln 100 3 n 20 0 d
+a 0 s 0:1 0 14 5 drn 100 PIN=3
+a 0 s 0 0 20 70 hln 100 ERC=b
+a 0 s 0 0 20 70 hln 100 FLOAT=e
+@graphics 30 30 20 30 10
+v 0 25 20
+15 20
+20 12
+25 20
+;
+v 0 15 12
+13 9
+;
+v 0 27 15
+25 12
+;
+v 0 25 12
+15 12
+;
+a 0 20 12 20 10 20 10 
+a 0 10 20 15 20 15 20 
+*symbol AD633
+d Analog multiplier
+@type p 9.2
+@attributes
+a 0 sp 9 0 0 0 hln 100 REFDES=XU?
+a 0 sp 11 0 18 8 hln 100 PART=AD633
+a 0 sp 0 0 0 0 hln 100 MODEL=AD633
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=XU^@REFDES %1 %2 %3 %4 %5 %6 %7 %8 @MODEL
+@pins
+p 0 12 22 hln 100 1 n 0 20 h
+a 0 s 0:1 0 9 18 hrn 100 PIN=1
+a 0 s 0:13 0 0 20 hln 100 ERC=i
+p 0 12 32 hln 100 2 n 0 30 h
+a 0 s 0:1 0 9 28 hrn 100 PIN=2
+a 0 s 0:13 0 0 30 hln 100 ERC=i
+p 0 12 52 hln 100 3 n 0 50 h
+a 0 s 0:1 0 9 48 hrn 100 PIN=3
+a 0 s 0:13 0 0 50 hln 100 ERC=i
+p 0 12 62 hln 100 4 n 0 60 h
+a 0 s 0:1 0 9 58 hrn 100 PIN=4
+a 0 s 0:13 0 0 60 hln 100 ERC=i
+p 0 48 78 hln 100 5 n 60 80 u
+a 0 s 0:1 0 51 86 hln 100 PIN=5
+a 0 s 0:13 0 60 80 hln 100 ERC=p
+p 0 12 82 hln 100 6 n 0 80 h
+a 0 s 0:1 0 9 78 hrn 100 PIN=6
+a 0 s 0:13 0 0 80 hln 100 ERC=i
+p 0 48 52 hrn 100 7 n 60 50 u
+a 0 s 0:1 0 51 48 hln 100 PIN=7
+a 0 s 0:13 0 60 50 hln 100 ERC=o
+p 0 48 22 hrn 100 8 n 60 20 u
+a 0 s 0:1 0 51 26 hln 100 PIN=8
+a 0 s 0:13 0 60 20 hln 100 ERC=p
+@graphics 60 100 30 50 10
+r 0 10 10 50 90
+z 26 12 22 hln 100 2
+X1
+z 26 12 32 hln 100 2
+X2
+z 26 12 52 hln 100 2
+Y1
+z 26 12 52 hln 100 2
+Y1
+z 26 12 62 hln 100 2
+Y2
+z 26 12 82 hln 100 1
+Z
+z 26 36 82 hln 100 3
+-Vs
+z 26 34 24 hln 100 3
++Vs
+z 26 40 52 hln 100 1
+W
+z 26 -16 98 hln 100 21
+W=(X1-X2)(Y1-Y2)/10+Z
+*symbol HCPL3180
+d MOSFET-IGBT Driver
+@type p 9.2
+@attributes
+a 0 sp 9 0 10 -2 hln 100 REFDES=U?
+a 0 sp 11 0 18 88 hln 100 PART=HCPL3180
+a 0 sp 0 0 0 0 hln 100 MODEL=HCPL3180
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %2 %3 %5 %6 %7 %8 @model
+@views
+a 0 u 13 0 0 0 hln 100 DEFAULT=HCPL3180.sch
+@pins
+p 0 12 52 hln 100 3 n 0 50 h
+a 0 s 0:13 0 0 50 hln 100 ERC=i
+a 0 s 1 0 3 48 hln 100 PIN=3
+p 0 92 12 hrn 100 8 n 80 10 u
+a 0 s 0:13 0 80 10 hln 100 ERC=i
+a 0 s 1 0 73 8 hln 100 PIN=8
+p 0 68 32 hrn 100 7 n 80 30 u
+a 0 s 0:13 0 80 30 hln 100 ERC=o
+a 0 s 1 0 73 28 hln 100 PIN=7
+p 0 68 52 hrn 100 6 n 80 50 u
+a 0 s 0:13 0 80 50 hln 100 ERC=o
+a 0 s 1 0 73 48 hln 100 PIN=6
+p 0 68 72 hrn 100 5 n 80 70 u
+a 0 s 0:13 0 80 70 hln 100 ERC=i
+a 0 s 1 0 73 68 hln 100 PIN=5
+p 0 12 32 hln 100 2 n 0 30 h
+a 0 s 0:13 0 0 30 hln 100 ERC=i
+a 0 s 1 0 3 28 hln 100 PIN=2
+@graphics 80 80 40 40 10
+r 0 10 0 70 80
+a 0 0 70 3 70 3 70 
+a 0 10 70 5 70 5 70 
+a 0 0 10 3 10 3 10 
+a 0 10 10 5 10 5 10 
+z 26 12 52 hln 100 7
+CATHODE
+z 26 56 52 hln 100 2
+VO
+z 26 56 32 hln 100 2
+VO
+z 26 52 72 hln 100 3
+VEE
+z 26 50 14 hln 100 3
+VCC
+z 26 12 32 hln 100 5
+ANODE
+z 26 12 14 hln 100 3
+N/C
+z 26 12 72 hln 100 3
+N/C
+*symbol OPA_1
+d Ideal Operational Amplifier
+@type p 9.2
+@attributes
+a 0 u 0:13 0 0 0 hln 100 ipin(0)=0
+a 0 sp 9 0 0 0 hln 100 REFDES=HS?
+a 0 sp 0:11 0 0 40 hln 100 PART=OPA_1
+a 0 sp 0 0 0 0 hln 100 MODEL=OPA_1
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %1 %2 %3 %0 @model
+@views
+a 0 u 13 0 0 0 hln 100 DEFAULT=OPA_1.sch
+@pins
+p 0 12 32 hln 100 1 n 0 30 h
+a 0 s 0:13 0 0 30 hln 100 ERC=i
+a 0 s 0:1 0 3 28 hln 100 PIN=1
+p 0 12 12 hln 100 2 b 0 10 h
+a 0 s 0:13 0 0 10 hln 100 ERC=i
+a 0 s 0:1 0 3 8 hln 100 PIN=2
+p 0 48 22 hrn 100 3 n 60 20 u
+a 0 s 0:13 0 60 20 hln 100 ERC=o
+a 0 s 0:1 0 53 18 hln 100 PIN=3
+p 2 20 -5 dcn 100 0 n 20 -10 d
+a 0 s 1 0 42 -12 hln 100 PIN=4
+@graphics 60 40 20 20 10
+v 0 50 20
+10 40
+;
+v 0 10 0
+50 20
+;
+v 0 10 10
+10 40
+;
+v 0 10 40
+10 0
+;
+*symbol OPA_2
+d Operational Amplifier
+@type p 9.2
+@attributes
+a 0 sp 9 0 0 0 hln 100 REFDES=HS?
+a 0 sp 0:11 0 0 60 hln 100 PART=OPA_2
+a 0 sp 0 0 0 0 hln 100 MODEL=OPA_2
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %+V %-V %1 %2 %out @model
+@views
+a 0 u 13 0 0 0 hln 100 DEFAULT=OPA_2.sch
+@pins
+p 0 12 32 hln 100 1 n 0 30 h
+a 0 s 0:13 0 0 30 hln 100 ERC=i
+a 0 s 0:1 0 3 28 hln 100 PIN=1
+p 0 12 12 hln 100 2 b 0 10 h
+a 0 s 0:13 0 0 10 hln 100 ERC=i
+a 0 s 0:1 0 3 8 hln 100 PIN=2
+p 0 48 22 hrn 100 out n 60 20 u
+a 0 s 0:13 0 60 20 hln 100 ERC=o
+a 0 s 0:1 0 53 18 hln 100 PIN=5
+p 0 28 12 dln 100 +V n 30 0 d
+a 0 s 0:13 0 30 0 hln 100 ERC=i
+a 0 s 0:1 0 24 3 drn 100 PIN=3
+p 0 32 28 vln 100 -V n 30 40 v
+a 0 s 0:13 0 30 40 hln 100 ERC=i
+a 0 s 0:1 0 28 37 vrn 100 PIN=4
+@graphics 60 40 20 20 10
+v 0 50 20
+10 40
+;
+v 0 10 0
+50 20
+;
+v 0 10 10
+10 40
+;
+v 0 10 40
+10 0
+;
+z 26 28 18 hln 100 1
++
+z 26 28 24 hln 100 1
+_
