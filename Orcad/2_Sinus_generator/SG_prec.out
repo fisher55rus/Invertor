@@ -1,0 +1,133 @@
+
+**** 02/18/19 18:35:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator_precisious.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Feb 18 18:35:18 2019
+
+
+
+** Analysis setup **
+.tran 0ns 100m 0 1.57u SKIPBP
+.LIB "C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "nom.lib"
+
+.INC "Sinus_generator_precisious.net"
+
+
+
+**** INCLUDING Sinus_generator_precisious.net ****
+* Schematics Netlist *
+
+
+
+C_C1         $N_0001 $N_0002  33n  
+C_C2         $N_0002 $N_0003  33n  
+R_R3         $N_0004 $N_0003  10k  
+R_R1         $N_0001 $N_0003  12.06k  
+R_R2         0 $N_0002  12.06k  
+R_R6         $N_0006 $N_0005  10k  
+V_V3         $N_0007 0 2.5
+X_U5A         $N_0007 $N_0008 +15 -15 $N_0008 TL082
+X_U3A         $N_0008 $N_0009 +15 -15 $N_0010 TL082
+V_V2         -15 0 -15V
+V_V1         +15 0 15V
+X_U6A         0 $N_0006 +15 -15 $N_0005 TL082
+R_R7         $N_0006 $N_0008  10k  
+D_D4         $N_0009 $N_0010 D1N4151 
+D_D5         $N_0011 $N_0009 D1N4151 
+R_R5         $N_0009 $N_0004  100k  
+X_U4A         $N_0005 $N_0009 +15 -15 $N_0011 TL082
+X_U1A         $N_0004 $N_0001 +15 -15 $N_0003 TL082
+R_R4         0 $N_0004  22k  
+
+**** RESUMING Sinus_generator_precisious.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 02/18/19 18:35:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator_precisious.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D1N4151         X_U5A.dx        X_U5A.dy        X_U3A.dx        
+          IS    2.200000E-09  800.000000E-18  800.000000E-18  800.000000E-18 
+           N    1.768                                                        
+         ISR    7.832000E-09                                                 
+         IKF    8.512000E-03                                                 
+          BV   75                                                            
+         IBV    5.000000E-06                                                 
+          RS     .5927          1               1.000000E-03    1            
+          TT    5.771000E-09                                                 
+         CJO    1.725000E-12                   10.000000E-12                 
+          VJ     .5                                                          
+           M     .08882                                                      
+
+
+               X_U3A.dy        X_U6A.dx        X_U6A.dy        X_U4A.dx        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U4A.dy        X_U1A.dx        X_U1A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03 
+         CJO   10.000000E-12                   10.000000E-12 
+
+
+**** 02/18/19 18:35:22 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator_precisious.sch
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U5A.jx        X_U3A.jx        X_U6A.jx        X_U4A.jx        
+               NJF             NJF             NJF             NJF             
+         VTO   -1              -1              -1              -1            
+        BETA  984.200000E-06  984.200000E-06  984.200000E-06  984.200000E-06 
+          IS    2.500000E-12    2.500000E-12    2.500000E-12    2.500000E-12 
+
+
+               X_U1A.jx        
+               NJF             
+         VTO   -1            
+        BETA  984.200000E-06 
+          IS    2.500000E-12 
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME           66.81
+
