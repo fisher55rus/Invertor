@@ -1,0 +1,60 @@
+* Schematics Netlist *
+
+
+
+Kn_K1         L_L1 L_L2     1
+M_M1         $N_0003 $N_0002 $N_0001 $N_0001 IRF255
+M_M2         $N_0001 $N_0004 0 0 IRF255
+Kn_K2         L_L3 L_L4     1
+M_M3         $N_0003 $N_0006 $N_0005 $N_0005 IRF255
+M_M4         $N_0005 $N_0007 0 0 IRF255
+R_R7         $N_0008 V_correct  5k  
+R_R8         V_correct $N_0009  100k  
+R_R9         $N_0011 $N_0010  1k  
+C_C2         $N_0012 0  100p  
+E_LIMIT1         $N_0011 0 VALUE {LIMIT(V($N_0009),-1,1)}
+D_D1         $N_0001 $N_0003 Dbreak-X 
+L_L3         $N_0013 $N_0014  1mH  
+L_L1         $N_0001 $N_0013  5uH  
+L_L5         $N_0014 $N_0005  50uH  
+D_D4         $N_0005 $N_0003 Dbreak-X 
+D_D5         0 $N_0005 Dbreak-X 
+D_D3         0 $N_0001 Dbreak-X 
+R_R16         $N_0016 $N_0015  10k  
+C_C3         $N_0015 0  100p  
+R_R12         $N_0017 +15  10k  
+R_R13         0 $N_0017  10k  
+R_R17         $N_0018 0  10k  
+R_R15         -15 $N_0018  10k  
+X_U1A         0 V_correct +15 -15 $N_0009 TL082
+R_R4         $N_0007 $N_0019  10  
+R_R3         $N_0006 $N_0020  10  
+R_R18         0 bb  10k  
+R_R19         0 aa  10k  
+E_E2         $N_0021 0 bb 0 1
+E_E1         $N_0022 $N_0001 aa 0 1
+E_E3         $N_0020 $N_0005 bb 0 1
+E_E4         $N_0019 0 aa 0 1
+R_R1         $N_0002 $N_0022  10  
+R_R2         $N_0004 $N_0021  10  
+V_V5         $N_0008 0  
++SIN 0 5 400 0 0 0
+X_U2A         $N_0010 $N_0012 +15 -15 $N_0016 TL082
+R_R11         I_sence $N_0012  1k  
+R_R6         0 I_sence  33  
+L_L4         V_sence 0  12m  
+L_L2         0 I_sence  5  
+X_U3A         $N_0015 $N_0017 +15 -15 bb TL082
+X_U4A         $N_0018 $N_0015 +15 -15 aa TL082
+C_C1         V_sence 0  10u  
+V_V7         -15 0 -15
+V_V6         +15 0 15
+R_R22         $N_0023 V_correct  5k  
+X_U5A         0 $N_0024 +15 -15 $N_0023 TL082
+R_R21         $N_0024 $N_0023  5k  
+R_R20         V_sence $N_0024  50k  
+R_R23         V_sence $N_0025  5k  
+C_C4         $N_0025 $N_0024  220p  
+R_R10         $N_0010 $N_0016  100k  
+V_V1         $N_0003 0 27
+R_R5         V_sence 0  300  
