@@ -1,0 +1,28 @@
+* C:\Workspace_git\Invertor\Orcad\11_constant_current_transform\Schematic2.sch
+
+* Schematics Version 9.2
+* Mon Mar 04 18:54:39 2019
+
+
+.PARAM         Ep=27 Rvar=5 
+
+** Analysis setup **
+.tran 0ns 300ms 0 1.57u SKIPBP
+.OPTIONS ABSTOL=1uA
+.OPTIONS ITL4=60
+.OPTIONS RELTOL=0.01
+.LIB "C:\Workspace_git\Invertor\Orcad\Test_Var\Schematic2.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+.lib "nom.lib"
+.inc "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+
+.INC "Schematic2.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

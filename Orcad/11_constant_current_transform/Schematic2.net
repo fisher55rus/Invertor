@@ -1,0 +1,69 @@
+* Schematics Netlist *
+
+
+
+M_M1         $N_0002 $N_0001 cc cc IRF255
+M_M2         cc $N_0003 0 0 IRF255
+M_M3         $N_0002 $N_0004 dd dd IRF255
+M_M4         dd $N_0005 0 0 IRF255
+L_L1         $N_0006 $N_0007  1mH  
+L_L2         cc $N_0006  5uH  
+L_L3         $N_0007 dd  50uH  
+R_R9         $N_0005 $N_0008  10  
+R_R10         $N_0004 $N_0009  10  
+E_E1         $N_0010 0 bb 0 1
+E_E2         $N_0011 cc aa 0 1
+E_E3         $N_0009 dd bb 0 1
+E_E4         $N_0008 0 aa 0 1
+R_R13         $N_0001 $N_0011  10  
+R_R14         $N_0003 $N_0010  10  
+L_L4         V_sence 0  12m  
+L_L5         0 I_sence  5  
+C_C3         V_sence 0  10u  
+D_D5         cc $N_0002 Dbreak-X 
+D_D6         0 cc Dbreak-X 
+D_D7         0 dd Dbreak-X 
+D_D8         dd $N_0002 Dbreak-X 
+Kn_K1         L_L2 L_L5     1
+Kn_K2         L_L1 L_L4     1
+R_R22         V_sence 0  {Rvar}  
+V_V4         $N_0002 0 {Ep}
+R_R16         0 I_sence  27  
+R_R1         $N_0012 V_correct  5k  
+R_R2         V_correct $N_0013  100k  
+R_R3         $N_0015 $N_0014  1k  
+C_C1         $N_0016 0  100p  
+E_LIMIT1         $N_0015 0 VALUE {LIMIT(V($N_0013),-1,1)}
+R_R4         $N_0018 $N_0017  10k  
+C_C2         $N_0017 0  100p  
+R_R5         $N_0019 +15  10k  
+R_R6         0 $N_0019  10k  
+R_R7         $N_0020 0  10k  
+R_R8         -15 $N_0020  10k  
+X_U1A         0 V_correct +15 -15 $N_0013 TL082
+R_R11         0 bb  10k  
+R_R12         0 aa  10k  
+V_V1         $N_0012 0  
++SIN 0 5 400 0 0 0
+X_U2A         $N_0014 $N_0016 +15 -15 $N_0018 TL082
+R_R15         I_sence $N_0016  1k  
+X_U3A         $N_0017 $N_0019 +15 -15 bb TL082
+X_U4A         $N_0020 $N_0017 +15 -15 aa TL082
+V_V2         -15 0 -15
+V_V3         +15 0 15
+R_R17         $N_0021 V_correct  5k  
+X_U5A         0 $N_0022 +15 -15 $N_0021 TL082
+R_R18         $N_0022 $N_0021  5k  
+R_R19         V_sence $N_0022  50k  
+R_R20         V_sence $N_0023  5k  
+C_C4         $N_0023 $N_0022  220p  
+R_R21         $N_0014 $N_0018  100k  
+X_U6A         $N_0024 $N_0025 +15 -15 $N_0026 TL082
+R_R23         dd $N_0025  32k  
+R_R24         cc $N_0024  33k  
+R_R25         $N_0025 $N_0026  5k  
+R_R27         $N_0026 $N_0027  220k  
+R_R26         $N_0024 0  5k  
+X_U7A         0 $N_0027 +15 -15 $N_0028 TL082
+C_C5         $N_0027 $N_0028  2u  
+R_R28         $N_0028 V_correct  5k  
