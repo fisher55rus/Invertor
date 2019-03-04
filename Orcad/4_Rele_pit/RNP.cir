@@ -1,0 +1,24 @@
+* C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\4_Rele_pit\RNP.sch
+
+* Schematics Version 9.2
+* Mon Feb 18 19:20:02 2019
+
+
+
+** Analysis setup **
+.tran 0ns 60m 0 1.57u SKIPBP
+.LIB "C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+.lib "nom.lib"
+.inc "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+
+.INC "RNP.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
