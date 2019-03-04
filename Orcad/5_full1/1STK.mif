@@ -1,0 +1,3 @@
+ lib=C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\5_full1\1STK.lib, offset=0, size=51
+ lib="C:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=41950, size=306
+ lib="C:\Program Files\Orcad\Capture\Library\PSpice\opamp.lib", offset=98631, size=1153

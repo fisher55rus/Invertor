@@ -1,0 +1,403 @@
+
+**** 02/25/19 19:02:38 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\7_full3\1STK.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Feb 25 19:02:37 2019
+
+
+
+** Analysis setup **
+.tran 0ns 10m 0 1.57u SKIPBP
+.OPTIONS ABSTOL=1uA
+.OPTIONS ITL4=60
+.LIB "C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\6_full2\1STK.lib"
+
+
+* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+.lib "nom.lib"
+.inc "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+
+
+**** INCLUDING Mylib.lib ****
+* PSpice Model Editor - Version 9.2
+
+*$
+**************************************************************
+*****************************************************************************
+* TL431 MACROMODEL ***************3-26-92************************************
+* REV N/A ****************************************************************DBB
+*****************************************************************************
+*              REFERENCE
+*              |  ANODE
+*              |  |  CATHODE
+*              |  |  |
+.SUBCKT  TL431 1  2  3
+V1  6  7  DC  1.4V
+I1  2  4  1E-3
+R1  1  2  1.2E6
+R2  4  2  RMOD 2.495E3
+R3  5  7  .2
+D1  3  6  DMOD1
+D2  2  3  DMOD1
+D3  2  7  DMOD2
+E1  5  2  POLY(2)  (4,2)  (1,2)  0  710  -710
+.MODEL RMOD RES (TC1=1.4E-5 TC2=-1E-6)
+.MODEL DMOD1 D (RS=.3)
+.MODEL DMOD2 D (RS=1E-6)
+.ENDS
+*$
+*****************************************************************************
+* AD633 Analog Multiplier Macro Model 12/93, Rev. A
+* AAG/PMI
+*
+* Copyright 1993 by Analog Devices, Inc.
+*
+* Refer to "README.DOC" file for License Statement.  Use of this model
+* indicates your acceptance with the terms and provisions in the License Statement.
+*
+* Node assignments
+*             X1
+*             |  X2
+*             |  |  Y1
+*             |  |  |  Y2
+*             |  |  |  |  VNEG
+*             |  |  |  |  |  Z
+*             |  |  |  |  |  |  W
+*             |  |  |  |  |  |  |  VPOS
+*             |  |  |  |  |  |  |  |
+.SUBCKT AD633 1  2  3  4  5  6  7  8
+*
+EREF 100 0 POLY(2) 8 0 5 0 (0,0.5,0.5)
+*
+* X-INPUT STAGE & POLE AT 15 MHz
+*
+IBX1 1 0 DC 8E-7
+IBX2 2 0 DC 8E-7
+EOSX 10 1 POLY(1) (16,100) (5E-3,1)
+RX1A 10 11 5E6
+RX1B 11 2 5E6
+*
+GX 100 12 10 2 1E-6
+RX 12 100 1E6
+CX 12 100 1.061E-14
+VX1 8 13 DC 3.05
+DX1 12 13 DX
+VX2 14 5 DC 3.05
+DX2 14 12 DX
+*
+* COMMON-MODE GAIN NETWORK WITH ZERO AT 560 Hz
+*
+ECMX 15 100 11 100 10
+RCMX1 15 16 1E6
+CCMX 15 16 2.8421E-10
+RCMX2 16 100 1
+*
+* Y-INPUT STAGE & POLE AT 15 MHz
+*
+IBY1 3 0 DC 8E-7
+IBY2 4 0 DC 8E-7
+EOSY 20 3 POLY(1) (26,100) (5E-3,1)
+RY1A 20 21 5E6
+RY1B 21 4 5E6
+*
+GY 100 22 20 4 1E-6
+RY 22 100 1E6
+CY 22 100 1.061E-14
+VY1 8 23 DC 3.05
+DY1 22 23 DX
+VY2 24 5 DC 3.05
+DY2 24 22 DX
+*
+* COMMON-MODE GAIN NETWORK WITH ZERO AT 560 Hz
+*
+ECMY 25 100 21 100 10
+RCMY1 25 26 1E6
+CCMY 25 26 2.8421E-10
+RCMY2 26 100 1
+*
+* Z-INPUT STAGE & POLE AT 15 MHz
+*
+IBZ1 7 0 DC 8E-7
+IBZ2 6 0 DC 8E-7
+RZ1 7 6 10E6
+*
+GZ 100 32 7 6 1E-6
+RZ2 32 100 1E6
+CZ 32 100 1.061E-14
+VZ1 8 33 DC 3.05
+DZ1 32 33 DX
+VZ2 34 5 DC 3.05
+DZ2 34 33 DX
+*
+* 50-MHz MULTIPLIER CORE & SUMMER
+*
+GXY 100 40 POLY(2) (12,100) (22,100) (0,0,0,0,0.1E-6)
+RXY 40 100 1E6
+CXY 40 100 3.1831E-15
+*
+* OP AMP INPUT STAGE
+*
+VOOS 59 40 DC 5E-3
+Q1 55 32 60 QX
+Q2 56 59 61 QX
+R1 8 55 3.1831E4
+R2 60 54 3.1313E4
+R3 8 56 3.1831E4
+R4 61 54 3.1313E4
+I1 54 5 1E-4
+*
+* GAIN STAGE & DOMINANT POLE AT 316.23 Hz
+*
+G1 100 62 55 56 3.141637E-5
+R5 62 100 1.0066E8
+C3 62 100 5E-12
+V1 8 63 DC 4.3399
+D1 62 63 DX
+V2 64 5 DC 4.3399
+D2 64 62 DX
+*
+* NEGATIVE ZERO AT 20 MHz
+*
+ENZ 65 100 62 100 1E6
+RNZ1 65 66 1
+FNZ 65 66 VNC -1
+RNZ2 66 100 1E-6
+ENC 67 0 65 66 1
+CNZ 67 68 7.9577E-9
+VNC 68 0 DC 0
+*
+* POLE AT 4 MHz
+*
+G2 100 69 66 100 1E-6
+R6 69 100 1E6
+C2 69 100 3.9789E-14
+*
+* OP AMP OUTPUT STAGE
+*
+FSY 8 5 POLY(2) VZC1 VZC2 (2.8286E-3,1,1)
+RDC 8 5 28E3
+GZC 100 73 72 69 11.623E-3
+VZC1 74 100 DC 0
+DZC1 73 74 DX
+VZC2 100 75 DC 0
+DZC2 75 73 DX
+VSC1 70 72 0.695
+DSC1 69 70 DX
+VSC2 72 71 0.695
+DSC2 71 69 DX
+GO1 72 8 8 69 11.623E-3 
+RO1 8 72 86
+GO2 5 72 69 5 11.623E-3 
+RO2 72 5 86
+LO 72 7 1E-7
+*
+* MODELS USED
+*
+.MODEL QX NPN(BF=1E4)
+.MODEL DX D(IS=1E-15)
+.ENDS AD633
+*$
+
+**** RESUMING 1STK.cir ****
+.INC "1STK.net"
+
+
+
+**** INCLUDING 1STK.net ****
+* Schematics Netlist *
+
+
+
+V_V1         $N_0001 0 18
+Kn_K1         L_L1 L_L2     1
+M_M1         $N_0001 $N_0003 $N_0002 $N_0002 IRF255
+M_M2         $N_0002 $N_0004 0 0 IRF255
+Kn_K2         L_L3 L_L4     1
+M_M3         $N_0001 $N_0006 $N_0005 $N_0005 IRF255
+M_M4         $N_0005 $N_0007 0 0 IRF255
+R_R7         $N_0008 V_correct  5k  
+R_R8         V_correct $N_0009  100k  
+R_R9         $N_0011 $N_0010  1k  
+C_C2         $N_0012 0  100p  
+E_LIMIT1         $N_0011 0 VALUE {LIMIT(V($N_0009),-1,1)}
+D_D1         $N_0002 $N_0001 Dbreak-X 
+L_L3         $N_0013 $N_0014  1mH  
+L_L1         $N_0002 $N_0013  5uH  
+L_L5         $N_0014 $N_0005  50uH  
+D_D4         $N_0005 $N_0001 Dbreak-X 
+D_D5         0 $N_0005 Dbreak-X 
+D_D3         0 $N_0002 Dbreak-X 
+R_R16         $N_0016 $N_0015  10k  
+C_C3         $N_0015 0  100p  
+R_R12         $N_0017 +15  10k  
+R_R13         0 $N_0017  10k  
+R_R17         $N_0018 0  10k  
+R_R15         -15 $N_0018  10k  
+X_U1A         0 V_correct +15 -15 $N_0009 TL082
+R_R4         $N_0007 $N_0019  10  
+R_R3         $N_0006 $N_0020  10  
+R_R18         0 bb  10k  
+R_R19         0 aa  10k  
+E_E2         $N_0021 0 bb 0 1
+E_E1         $N_0022 $N_0002 aa 0 1
+E_E3         $N_0020 $N_0005 bb 0 1
+E_E4         $N_0019 0 aa 0 1
+R_R1         $N_0003 $N_0022  10  
+R_R2         $N_0004 $N_0021  10  
+V_V5         $N_0008 0  
++SIN 0 5 400 0 0 0
+X_U2A         $N_0010 $N_0012 +15 -15 $N_0016 TL082
+R_R11         I_sence $N_0012  1k  
+R_R6         0 I_sence  33  
+L_L4         V_sence 0  12m  
+L_L2         0 I_sence  5  
+X_U3A         $N_0015 $N_0017 +15 -15 bb TL082
+X_U4A         $N_0018 $N_0015 +15 -15 aa TL082
+C_C1         V_sence 0  10u  
+V_V7         -15 0 -15
+V_V6         +15 0 15
+R_R5         V_sence 0  10  
+R_R22         $N_0023 V_correct  5k  
+X_U5A         0 $N_0024 +15 -15 $N_0023 TL082
+R_R21         $N_0024 $N_0023  5k  
+R_R20         V_sence $N_0024  50k  
+R_R23         V_sence $N_0025  5k  
+C_C4         $N_0025 $N_0024  220p  
+R_R10         $N_0010 $N_0016  100k  
+
+**** RESUMING 1STK.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 02/25/19 19:02:38 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\7_full3\1STK.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak-X        X_U1A.dx        X_U1A.dy        X_U2A.dx        
+          IS  100.000000E-12  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS     .05            1               1.000000E-03    1            
+         CJO  150.000000E-12                   10.000000E-12                 
+
+
+               X_U2A.dy        X_U3A.dx        X_U3A.dy        X_U4A.dx        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U4A.dy        X_U5A.dx        X_U5A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03 
+         CJO   10.000000E-12                   10.000000E-12 
+
+
+**** 02/25/19 19:02:38 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\7_full3\1STK.sch
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.jx        X_U2A.jx        X_U3A.jx        X_U4A.jx        
+               NJF             NJF             NJF             NJF             
+         VTO   -1              -1              -1              -1            
+        BETA  984.200000E-06  984.200000E-06  984.200000E-06  984.200000E-06 
+          IS    2.500000E-12    2.500000E-12    2.500000E-12    2.500000E-12 
+
+
+               X_U5A.jx        
+               NJF             
+         VTO   -1            
+        BETA  984.200000E-06 
+          IS    2.500000E-12 
+
+
+**** 02/25/19 19:02:38 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\7_full3\1STK.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF255          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W   28            
+         VTO    3.686        
+          KP    1.040000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.000000E-03 
+          RS     .01         
+          RG    7.008        
+          RB    6.906000E-03 
+         RDS    1.000000E+06 
+          IS  562.200000E-09 
+          JS    0            
+           N    1.833        
+          PB    2.532        
+        PBSW    2.532        
+         CBD    5.886000E-09 
+          CJ    0            
+        CJSW    0            
+          MJ    1.089        
+        CGSO   43.180000E-12 
+        CGDO    7.890000E-12 
+        CGBO    0            
+         TOX    2.000000E-06 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME           33.16
+
