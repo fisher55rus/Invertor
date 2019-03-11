@@ -1,0 +1,133 @@
+
+**** 03/11/19 17:15:40 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\13_rassas_dioda_2\1STK.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Mar 11 17:15:40 2019
+
+
+
+** Analysis setup **
+.tran 0ns 60us 0 0.53u SKIPBP
+.OPTIONS ABSTOL=1uA
+.OPTIONS ITL4=60
+.LIB "D:\GIT\MAI\Invertor\Orcad\1_Power_cascade\1STK.lib"
+.LIB "D:\GIT\MAI\Invertor\Orcad\13_rassas_dioda_2\1STK.lib"
+
+
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
+.lib "nom.lib"
+
+.INC "1STK.net"
+
+
+
+**** INCLUDING 1STK.net ****
+* Schematics Netlist *
+
+
+
+R_R2         $N_0002 $N_0001  10  
+I_I1         $N_0003 $N_0004 DC 5A  
+D_D6         $N_0004 $N_0003 Dbreak-X 
+M_M5         $N_0003 $N_0004 $N_0004 $N_0004 IRF840
+M_M6         $N_0004 $N_0002 0 0 IRF840
+V_V2         $N_0001 0  
++PULSE 0 15 0 50n 50n 9u 20u
+V_V1         $N_0003 0 100
+
+**** RESUMING 1STK.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 03/11/19 17:15:40 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\13_rassas_dioda_2\1STK.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak-X        
+          IS  100.000000E-12 
+          RS     .05         
+         CJO  150.000000E-12 
+
+
+**** 03/11/19 17:15:40 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\13_rassas_dioda_2\1STK.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF840          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .68         
+         VTO    3.879        
+          KP   20.850000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD     .6703       
+          RS    6.382000E-03 
+          RG     .6038       
+         RDS    2.222000E+06 
+          IS   56.030000E-12 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    1.415000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  710.000000E-09 
+        CGSO    1.625000E-09 
+        CGDO  133.400000E-12 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .08
+
