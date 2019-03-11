@@ -1,0 +1,149 @@
+
+**** 03/11/19 18:04:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\15_Driver_with_stab\Schematic2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Mon Mar 11 18:04:11 2019
+
+
+
+** Analysis setup **
+.tran 0ns 200u 0 0.1u SKIPBP
+.LIB "D:\GIT\MAI\Invertor\Orcad\15_Driver_with_stab\Schematic2.lib"
+
+
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
+.lib "nom.lib"
+
+.INC "Schematic2.net"
+
+
+
+**** INCLUDING Schematic2.net ****
+* Schematics Netlist *
+
+
+
+R_R1         $N_0002 $N_0001  1  
+L_L1         $N_0001 0  10m  
+D_D3         $N_0003 $N_0004 D1N4151 
+M_M2         $N_0007 $N_0006 $N_0005 $N_0005 IRFF110
+C_C1         $N_0005 $N_0004  22n  
+V_V1         $N_0002 0  
++PULSE -15 15 0 100n 100n 24.9u 50u
+R_R4         0 $N_0005  100  
+D_D1         $N_0008 $N_0004 D1N4151 
+M_M1         $N_0006 $N_0008 $N_0003 $N_0003 IRFF110
+R_R2         $N_0008 $N_0007  22  
+R_R3         $N_0005 $N_0007  1k  
+V_V2         $N_0009 0 50
+M_M3         $N_0009 $N_0007 $N_0005 $N_0005 IRF225
+D_D6         $N_0005 $N_0008 Dbreak 
+D_D7         $N_0005 $N_0003 Dbreak 
+Kn_K1         L_L1 L_L2     0.99
+L_L2         $N_0008 $N_0003  10m  
+R_R5         $N_0006 $N_0004  1k  
+
+**** RESUMING Schematic2.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 03/11/19 18:04:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\15_Driver_with_stab\Schematic2.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          D1N4151         
+          IS  100.000000E-12    2.200000E-09 
+           N                    1.768        
+         ISR                    7.832000E-09 
+         IKF                    8.512000E-03 
+          BV   15              75            
+         IBV                    5.000000E-06 
+          RS     .1              .5927       
+          TT                    5.771000E-09 
+         CJO   50.000000E-12    1.725000E-12 
+          VJ                     .5          
+           M                     .08882      
+
+
+**** 03/11/19 18:04:11 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\15_Driver_with_stab\Schematic2.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRFF110         IRF225          
+               NMOS            NMOS            
+       LEVEL    3               3            
+           L    2.000000E-06    2.000000E-06 
+           W     .49             .2          
+         VTO    3.694           3.803        
+          KP   20.820000E-06   20.120000E-06 
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          RD     .04147          .7773       
+          RS     .4238           .08255      
+          RG    4.2             2.916        
+         RDS  444.400000E+03    1.111000E+06 
+          IS  305.400000E-15  311.400000E-12 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+         CBD  377.800000E-12  514.400000E-12 
+          CJ    0               0            
+        CJSW    0               0            
+          TT  370.000000E-09  350.000000E-09 
+        CGSO  739.400000E-12    3.913000E-09 
+        CGDO   82.140000E-12  354.300000E-12 
+        CGBO    0               0            
+         TOX  100.000000E-09  100.000000E-09 
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA    0               0            
+         ETA    0               0            
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    0               0            
+       XPART    0               0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .31
+

@@ -1,0 +1,2 @@
+.model Dbreak D Is=1e-10 Cjo=50pF Rs=.1 BV=15 
+*$
