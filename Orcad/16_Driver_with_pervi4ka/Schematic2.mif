@@ -1,0 +1,7 @@
+ lib=D:\GIT\MAI\Invertor\Orcad\15_Driver_with_stab\Schematic2.lib, offset=0, size=53
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\diode.lib", offset=26387, size=273
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=111181, size=1096
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=133855, size=339
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=36020, size=334
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\bipolar.lib", offset=216836, size=313
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\bipolar.lib", offset=171554, size=325
