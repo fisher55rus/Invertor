@@ -1,7 +1,7 @@
 
-**** 02/18/19 18:54:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/08/19 17:53:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
- * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\3_Limit\Limit.sch
+ * D:\GIT\MAI\Invertor\Orcad\3_Limit\Limit.sch
 
 
  ****     CIRCUIT DESCRIPTION
@@ -13,16 +13,18 @@
 
 
 * Schematics Version 9.2
-* Mon Feb 18 18:54:14 2019
+* Mon Apr 08 17:53:41 2019
 
 
 
 ** Analysis setup **
 .tran 0ns 60m 0 1.57u SKIPBP
-.LIB "C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib"
+.LIB "D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib"
 
 
-* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
 .lib "nom.lib"
 
 .INC "Limit.net"
@@ -44,12 +46,12 @@ D_D4         $N_0005 $N_0006 D1N4151
 D_D5         $N_0007 $N_0005 D1N4151 
 X_U3A         $N_0004 $N_0005 +15 -15 $N_0006 TL082
 X_U4A         $N_0001 $N_0005 +15 -15 $N_0007 TL082
-V_V4         $N_0008 0  
-+SIN 0 10 400 0 0 0
 R_R8         $N_0008 $N_0005  10k  
 E_LIMIT1         $N_0009 0 VALUE {LIMIT(V($N_0008),-1,1)}
 R_R9         0 $N_0009  10k  
 V_V3         $N_0003 0 1
+V_V4         $N_0008 0  
++SIN 0 10 400 0 0 0
 
 **** RESUMING Limit.cir ****
 .PROBE V(*) I(*) W(*) D(*) NOISE(*) 
@@ -57,9 +59,9 @@ V_V3         $N_0003 0 1
 
 .END
 
-**** 02/18/19 18:54:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/08/19 17:53:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
- * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\3_Limit\Limit.sch
+ * D:\GIT\MAI\Invertor\Orcad\3_Limit\Limit.sch
 
 
  ****     Diode MODEL PARAMETERS
@@ -96,9 +98,9 @@ V_V3         $N_0003 0 1
          CJO   10.000000E-12 
 
 
-**** 02/18/19 18:54:18 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/08/19 17:53:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
- * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\3_Limit\Limit.sch
+ * D:\GIT\MAI\Invertor\Orcad\3_Limit\Limit.sch
 
 
  ****     Junction FET MODEL PARAMETERS
@@ -119,5 +121,5 @@ V_V3         $N_0003 0 1
 
           JOB CONCLUDED
 
-          TOTAL JOB TIME           37.31
+          TOTAL JOB TIME            8.44
 

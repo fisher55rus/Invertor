@@ -1,11 +1,11 @@
-*version 9.2 1217081868
-u 376
+*version 9.2 607026490
+u 377
 U? 7
 V? 5
 R? 10
 C? 3
 D? 6
-? 4
+? 5
 LIMIT? 2
 @libraries
 @analysis
@@ -15,7 +15,7 @@ LIMIT? 2
 +3 1.57u
 .OP 0 
 .PROBE 0 1118480 -1 0 1 3
-.LIB C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
+.LIB D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
 @targets
 @attributes
 @translators
@@ -29,10 +29,10 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 6828 
+pageloc 1 0 6892 
 @status
-n 0 119:01:18:18:54:14;1550505254 e 
-s 2832 119:01:18:18:54:14;1550505254 e 
+n 0 119:03:08:17:53:41;1554735221 e 
+s 2832 119:03:08:17:53:41;1554735221 e 
 *page 1 0 1520 970 iB
 @ports
 port 7 GND_ANALOG 850 330 h
@@ -121,12 +121,6 @@ a 0 s 0:13 0 0 0 hln 100 GATE=A
 a 0 a 0:13 0 0 0 hln 100 PKGREF=U4
 a 0 ap 9 0 14 0 hln 100 REFDES=U4A
 a 0 sp 11 0 16 72 hln 100 PART=TL082
-part 319 VSIN 300 310 h
-a 0 a 0:13 0 0 0 hln 100 PKGREF=V4
-a 1 ap 9 0 20 10 hcn 100 REFDES=V4
-a 1 u 0 0 0 0 hcn 100 VOFF=0
-a 1 u 0 0 0 0 hcn 100 VAMPL=10
-a 1 u 0 0 0 0 hcn 100 FREQ=400
 part 363 R 610 190 h
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
@@ -152,15 +146,23 @@ a 0 sp 0 0 22 37 hln 100 PART=VDC
 a 0 a 0:13 0 0 0 hln 100 PKGREF=V3
 a 1 ap 9 0 24 7 hcn 100 REFDES=V3
 a 1 u 13 0 -11 18 hcn 100 DC=1
+part 319 VSIN 300 310 h
+a 0 a 0:13 0 0 0 hln 100 PKGREF=V4
+a 1 ap 9 0 20 10 hcn 100 REFDES=V4
+a 1 u 0 0 0 0 hcn 100 VOFF=0
+a 1 u 0 0 0 0 hcn 100 VAMPL=10
+a 1 u 0 0 0 0 hcn 100 FREQ=400
 part 1 titleblk 1520 970 h
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=B
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
-a 1 s 13 0 300 95 hrn 100 PAGENO=1
 a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
+a 1 s 13 0 300 95 hrn 100 PAGENO=1
 part 374 nodeMarker 690 350 h
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 a 0 0 4 22 hlb 100 LABEL=2
 part 375 nodeMarker 570 120 h
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 a 0 0 4 22 hlb 100 LABEL=3
 @conn
@@ -200,13 +202,6 @@ a 0 up 0:33 0 0 0 hln 100 V=
 s 850 330 880 330 8
 s 820 330 850 330 5
 a 0 up 33 0 835 329 hct 100 V=
-w 366
-s 300 190 610 190 322
-s 300 300 300 190 362
-s 300 310 300 300 320
-s 260 300 300 300 360
-s 260 120 260 300 358
-s 490 120 260 120 356
 w 357
 s 720 350 690 350 326
 s 690 280 690 350 158
@@ -220,6 +215,13 @@ s 720 190 720 350 324
 s 650 190 720 190 364
 w 369
 s 540 120 570 120 368
+w 366
+s 300 190 610 190 322
+s 300 300 300 190 362
+s 300 310 300 300 320
+s 260 300 300 300 360
+s 260 120 260 300 358
+s 490 120 260 120 356
 @junction
 j 510 290
 + p 194 V-
@@ -251,9 +253,6 @@ j 620 310
 j 620 250
 + p 146 V+
 + s 148
-j 300 350
-+ p 319 -
-+ s 328
 j 690 350
 + w 357
 + w 357
@@ -347,9 +346,6 @@ j 580 300
 j 580 410
 + p 149 -
 + w 357
-j 300 310
-+ p 319 +
-+ w 366
 j 300 300
 + w 366
 + w 366
@@ -380,6 +376,12 @@ j 570 120
 j 570 120
 + p 375 pin1
 + w 369
+j 300 350
++ p 319 -
++ s 328
+j 300 310
++ p 319 +
++ w 366
 @attributes
 a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
 a 0 s 0:13 0 0 0 hln 100 PAGENO=1

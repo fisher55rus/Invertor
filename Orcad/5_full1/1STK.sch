@@ -23,7 +23,7 @@ ABSTOL 1uA
 ITL4 60
 .OP 0 
 .PROBE 0 1118480 -1 0 1 3
-.LIB C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\5_full1\1STK.lib
+.LIB D:\GIT\MAI\Invertor\Orcad\5_full1\1STK.lib
 @targets
 @attributes
 @translators
@@ -39,9 +39,9 @@ AutoGenStim4ExtIFPorts 1
 @index
 pageloc 1 0 18603 
 @status
-n 0 119:01:25:18:36:52;1551109012 e 
-s 0 119:01:25:18:37:14;1551109034 e 
-c 119:01:25:18:39:53;1551109193
+n 0 119:03:08:18:01:21;1554735681 e 
+s 2832 119:03:08:18:01:21;1554735681 e 
+c 119:03:08:18:01:19;1554735679
 *page 1 0 256 160 mb
 @ports
 port 2 GND_ANALOG 480 320 h

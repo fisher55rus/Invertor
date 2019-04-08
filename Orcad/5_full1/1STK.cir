@@ -1,7 +1,7 @@
-* C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\5_full1\1STK.sch
+* D:\GIT\MAI\Invertor\Orcad\5_full1\1STK.sch
 
 * Schematics Version 9.2
-* Mon Feb 25 18:36:52 2019
+* Mon Apr 08 18:01:21 2019
 
 
 
@@ -9,13 +9,13 @@
 .tran 0ns 10m 0 1.57u SKIPBP
 .OPTIONS ABSTOL=1uA
 .OPTIONS ITL4=60
-.LIB "C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\5_full1\1STK.lib"
+.LIB "D:\GIT\MAI\Invertor\Orcad\5_full1\1STK.lib"
 
 
-* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
-.lib "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
 .lib "nom.lib"
-.inc "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
 
 .INC "1STK.net"
 
