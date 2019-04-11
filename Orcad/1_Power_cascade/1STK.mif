@@ -1,2 +1,2 @@
- lib="C:\Program Files\Orcad\work\Magistr2\1STK.lib", offset=0, size=51
- lib="C:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=41950, size=306
+ lib=D:\GIT\MAI\Invertor\Orcad\1_Power_cascade\1STK.lib, offset=0, size=51
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=41950, size=306
