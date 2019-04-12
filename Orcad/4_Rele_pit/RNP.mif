@@ -1,1 +1,2 @@
- lib="C:\Program Files\Orcad\Capture\Library\PSpice\bipolar.lib", offset=171554, size=325
+ lib="D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib", offset=528, size=954
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\bipolar.lib", offset=171554, size=325

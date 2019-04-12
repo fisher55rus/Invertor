@@ -1,7 +1,7 @@
 
-**** 02/18/19 18:13:32 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/12/19 18:21:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
- * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.sch
+ * D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.sch
 
 
  ****     CIRCUIT DESCRIPTION
@@ -13,16 +13,20 @@
 
 
 * Schematics Version 9.2
-* Mon Feb 18 18:13:31 2019
+* Fri Apr 12 18:21:13 2019
 
 
 
 ** Analysis setup **
 .tran 0ns 300m 0 1.57u SKIPBP
-.LIB "C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib"
+.STEP  TEMP LIST 
++ 25, 40
+.LIB "D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib"
 
 
-* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
 .lib "nom.lib"
 
 .INC "Sinus_generator.net"
@@ -53,9 +57,9 @@ R_R2         0 $N_0005  12.06k
 
 .END
 
-**** 02/18/19 18:13:32 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/12/19 18:21:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
- * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.sch
+ * D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.sch
 
 
  ****     Diode MODEL PARAMETERS
@@ -72,9 +76,9 @@ R_R2         0 $N_0005  12.06k
          CJO  150.000000E-12                   10.000000E-12 
 
 
-**** 02/18/19 18:13:32 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/12/19 18:21:13 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
- * C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.sch
+ * D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.sch
 
 
  ****     Junction FET MODEL PARAMETERS
@@ -95,5 +99,5 @@ R_R2         0 $N_0005  12.06k
 
           JOB CONCLUDED
 
-          TOTAL JOB TIME           65.16
+          TOTAL JOB TIME           38.44
 

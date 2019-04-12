@@ -1,4 +1,4 @@
-*version 9.2 2717240061
+*version 9.2 144424631
 u 295
 U? 7
 V? 4
@@ -14,7 +14,7 @@ D? 6
 +3 1.57u
 .OP 0 
 .PROBE 0 1118480 -1 0 1 3
-.LIB C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
+.LIB D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
 @targets
 @attributes
 @translators
@@ -28,10 +28,10 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 8625 
+pageloc 1 0 8657 
 @status
-n 0 119:01:18:18:35:18;1550504118 e 
-s 2832 119:01:18:18:35:18;1550504118 e 
+n 0 119:03:12:18:38:15;1555083495 e 
+s 2832 119:03:12:19:08:15;1555085295 e 
 *page 1 0 1520 970 iB
 @ports
 port 17 BUBBLE 560 190 u
@@ -188,9 +188,10 @@ a 0 u 13 0 11 5 hln 100 VALUE=22k
 part 1 titleblk 1520 970 h
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=B
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
-a 1 s 13 0 300 95 hrn 100 PAGENO=1
 a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
+a 1 s 13 0 300 95 hrn 100 PAGENO=1
 part 113 nodeMarker 630 160 h
+a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 a 0 0 4 22 hlb 100 LABEL=1
 @conn

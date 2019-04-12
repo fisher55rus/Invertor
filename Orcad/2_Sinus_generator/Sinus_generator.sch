@@ -1,10 +1,10 @@
-*version 9.2 468707380
-u 118
+*version 9.2 797181287
+u 121
 U? 2
 V? 3
 R? 6
 C? 3
-D? 4
+D? 7
 ? 2
 @libraries
 @analysis
@@ -12,9 +12,11 @@ D? 4
 +0 0ns
 +1 300m
 +3 1.57u
+.STEP 1 3 1
++ -1 25, 40
 .OP 0 
 .PROBE 0 1118480 -1 0 1 3
-.LIB C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
+.LIB D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
 @targets
 @attributes
 @translators
@@ -28,10 +30,10 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 4896 
+pageloc 1 0 5308 
 @status
-n 0 119:01:18:18:13:31;1550502811 e 
-s 0 119:01:18:18:14:38;1550502878 e 
+n 0 119:03:12:18:21:13;1555082473 e 
+s 2832 119:03:12:18:21:13;1555082473 e 
 *page 1 0 1520 970 iB
 @ports
 port 17 BUBBLE 350 170 u
@@ -124,55 +126,70 @@ a 0 u 13 0 3 3 hln 100 VALUE=12.06k
 part 1 titleblk 1520 970 h
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=B
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
-a 1 s 13 0 300 95 hrn 100 PAGENO=1
 a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
-part 113 nodeMarker 420 140 h
-a 0 s 0 0 0 0 hln 100 PROBEVAR=
-a 0 a 0 0 4 22 hlb 100 LABEL=1
+a 1 s 13 0 300 95 hrn 100 PAGENO=1
 @conn
 w 79
+a 0 up 0:33 0 0 0 hln 100 V=
 s 320 50 260 50 78
 s 260 120 260 130 75
 s 310 120 260 120 60
 s 260 50 260 120 80
+a 0 up 33 0 262 85 hlt 100 V=
 s 260 120 210 120 86
 s 210 120 210 130 88
 w 15
+a 0 up 0:33 0 0 0 hln 100 V=
 s 120 160 120 170 14
+a 0 up 33 0 122 165 hlt 100 V=
 w 13
+a 0 up 0:33 0 0 0 hln 100 V=
 s 60 160 60 170 12
+a 0 up 33 0 62 165 hlt 100 V=
 w 6
+a 0 up 0:33 0 0 0 hln 100 V=
 s 90 210 120 210 8
 s 60 210 90 210 5
+a 0 up 33 0 75 209 hct 100 V=
 w 104
+a 0 up 0:33 0 0 0 hln 100 V=
 s 180 210 180 220 103
 s 180 220 210 220 105
 s 210 220 240 220 107
+a 0 up 33 0 225 219 hct 100 V=
 s 240 220 240 210 109
 w 95
+a 0 up 0:33 0 0 0 hln 100 V=
 s 180 180 180 170 94
 s 180 170 210 170 96
 s 210 170 240 170 98
+a 0 up 33 0 225 169 hct 100 V=
 s 240 170 240 180 100
 w 67
 s 260 220 260 170 114
+w 83
+a 0 up 0:33 0 0 0 hln 100 V=
+s 350 250 320 250 24
+s 350 250 380 250 28
+a 0 up 33 0 365 249 hct 100 V=
+w 117
+a 0 up 0:33 0 0 0 hln 100 V=
+s 280 220 330 220 36
+s 280 220 280 250 32
+s 280 220 280 160 45
+a 0 up 33 0 282 190 hlt 100 V=
+s 280 250 290 250 34
+s 280 160 310 160 47
 w 116
+a 0 up 0:33 0 0 0 hln 100 V=
 s 370 220 420 220 38
 s 420 220 420 250 40
 s 420 140 420 220 51
 s 420 250 410 250 42
 s 390 140 420 140 49
 s 420 50 420 140 84
+a 0 up 33 0 422 95 hlt 100 V=
 s 360 50 420 50 82
-w 83
-s 350 250 320 250 24
-s 350 250 380 250 28
-w 117
-s 280 220 330 220 36
-s 280 220 280 250 32
-s 280 220 280 160 45
-s 280 250 290 250 34
-s 280 160 310 160 47
 @junction
 j 350 170
 + s 17
@@ -237,18 +254,6 @@ j 420 140
 j 210 130
 + p 90 2
 + w 79
-j 180 180
-+ p 92 1
-+ w 95
-j 210 170
-+ p 90 1
-+ w 95
-j 180 210
-+ p 92 2
-+ w 104
-j 210 220
-+ s 102
-+ w 104
 j 120 170
 + p 3 +
 + w 15
@@ -270,21 +275,30 @@ j 90 210
 j 60 210
 + p 4 -
 + w 6
-j 240 210
-+ p 112 1
-+ w 104
-j 240 180
-+ p 112 2
-+ w 95
-j 420 140
-+ p 113 pin1
-+ w 116
 j 260 220
 + s 65
 + w 67
 j 260 170
 + p 59 1
 + w 67
+j 240 210
++ p 112 1
++ w 104
+j 240 180
++ p 112 2
++ w 95
+j 180 210
++ p 92 2
++ w 104
+j 210 220
++ s 102
++ w 104
+j 180 180
++ p 92 1
++ w 95
+j 210 170
++ p 90 1
++ w 95
 @attributes
 a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
 a 0 s 0:13 0 0 0 hln 100 PAGENO=1

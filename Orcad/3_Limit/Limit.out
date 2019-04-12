@@ -1,5 +1,5 @@
-
-**** 04/08/19 17:53:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+**** 04/12/19 19:48:52 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
  * D:\GIT\MAI\Invertor\Orcad\3_Limit\Limit.sch
 
@@ -59,7 +59,7 @@ V_V4         $N_0008 0
 
 .END
 
-**** 04/08/19 17:53:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/12/19 19:48:52 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
  * D:\GIT\MAI\Invertor\Orcad\3_Limit\Limit.sch
 
@@ -98,7 +98,7 @@ V_V4         $N_0008 0
          CJO   10.000000E-12 
 
 
-**** 04/08/19 17:53:41 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/12/19 19:48:52 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
  * D:\GIT\MAI\Invertor\Orcad\3_Limit\Limit.sch
 
@@ -121,5 +121,5 @@ V_V4         $N_0008 0
 
           JOB CONCLUDED
 
-          TOTAL JOB TIME            8.44
+          TOTAL JOB TIME            8.47
 

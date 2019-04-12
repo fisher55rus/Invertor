@@ -1,4 +1,4 @@
-*version 9.2 136605180
+*version 9.2 841518835
 u 488
 U? 8
 V? 7
@@ -12,11 +12,11 @@ Q? 3
 @analysis
 .TRAN 1 0 1 0
 +0 0ns
-+1 60m
++1 20m
 +3 1.57u
 .OP 0 
 .PROBE 0 1118480 -1 0 1 3
-.LIB C:\Workspace_git\Magistr\Shevtsov\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
+.LIB D:\GIT\MAI\Invertor\Orcad\2_Sinus_generator\Sinus_generator.lib
 @targets
 @attributes
 @translators
@@ -30,80 +30,26 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 5349 
+pageloc 1 0 5042 
 @status
-n 0 119:01:18:19:20:02;1550506802 e 
-s 0 119:01:18:19:20:17;1550506817 e 
-c 119:01:18:19:21:05;1550506865
+n 0 119:03:12:20:02:26;1555088546 e 
+s 0 119:03:12:20:02:27;1555088547 e 
+c 119:03:12:20:03:48;1555088628
 *page 1 0 1520 970 iB
 @ports
 port 483 GND_ANALOG 270 440 h
 @parts
-part 387 R 270 360 v
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R11
-a 0 ap 9 0 15 0 hln 100 REFDES=R11
-a 0 u 13 0 27 -7 hln 100 VALUE=9.5k
-part 411 R 380 330 v
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R14
-a 0 ap 9 0 15 0 hln 100 REFDES=R14
-a 0 u 13 0 27 -7 hln 100 VALUE=10k
-part 410 R 380 270 v
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R13
-a 0 ap 9 0 15 0 hln 100 REFDES=R13
-a 0 u 13 0 27 -7 hln 100 VALUE=10k
 part 395 Q2N3505 330 280 u
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=TO-18
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=Q1
 a 0 ap 9 0 5 5 hln 100 REFDES=Q1
 a 0 sp 11 0 5 38 hln 100 PART=Q2N3505
-part 386 R 270 300 v
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R10
-a 0 ap 9 0 15 0 hln 100 REFDES=R10
-a 0 u 13 0 27 -7 hln 100 VALUE=2k
-part 431 R 440 330 v
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 u 13 0 27 -7 hln 100 VALUE=10k
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R16
-a 0 ap 9 0 15 0 hln 100 REFDES=R16
-part 430 R 440 270 v
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 u 13 0 27 -7 hln 100 VALUE=10k
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R15
-a 0 ap 9 0 15 0 hln 100 REFDES=R15
 part 376 TL431 380 380 h
 a 0 sp 11 0 18 38 hrn 100 PART=TL431
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=U7
 a 0 ap 9 0 8 -2 hln 100 REFDES=U7
-part 388 R 270 420 v
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R12
-a 0 ap 9 0 15 0 hln 100 REFDES=R12
-a 0 u 13 0 27 -7 hln 100 VALUE=2.5k
-part 377 VDC 140 360 h
-a 0 sp 0 0 22 37 hln 100 PART=VDC
-a 0 a 0:13 0 0 0 hln 100 PKGREF=V5
-a 1 ap 9 0 24 7 hcn 100 REFDES=V5
-a 1 u 13 0 -11 18 hcn 100 DC=9
 part 434 Q2N3505 480 280 U
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=TO-18
 a 0 s 0:13 0 0 0 hln 100 GATE=
@@ -116,24 +62,72 @@ a 1 ap 9 0 20 10 hcn 100 REFDES=V6
 a 1 u 0 0 0 0 hcn 100 VOFF=0
 a 1 u 0 0 0 0 hcn 100 VAMPL=7
 a 1 u 0 0 0 0 hcn 100 FREQ=400
-part 476 R 500 360 v
+part 386 R 270 300 v
+a 0 u 13 0 11 -3 hln 100 VALUE=2k
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
 a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 u 13 0 27 -7 hln 100 VALUE=10k
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R10
+a 0 ap 9 0 21 2 hln 100 REFDES=R10
+part 387 R 270 360 v
+a 0 u 13 0 17 -3 hln 100 VALUE=9.5k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R11
+a 0 ap 9 0 25 -2 hln 100 REFDES=R11
+part 388 R 270 420 v
+a 0 u 13 0 15 1 hln 100 VALUE=2.5k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R12
+a 0 ap 9 0 23 0 hln 100 REFDES=R12
+part 410 R 380 270 v
+a 0 u 13 0 15 1 hln 100 VALUE=10k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R13
+a 0 ap 9 0 25 2 hln 100 REFDES=R13
+part 430 R 440 270 v
+a 0 u 13 0 15 1 hln 100 VALUE=10k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R15
+a 0 ap 9 0 25 2 hln 100 REFDES=R15
+part 431 R 440 330 v
+a 0 u 13 0 11 1 hln 100 VALUE=10k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R16
+a 0 ap 9 0 21 2 hln 100 REFDES=R16
+part 411 R 380 330 v
+a 0 u 13 0 13 1 hln 100 VALUE=10k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R14
+a 0 ap 9 0 23 2 hln 100 REFDES=R14
+part 476 R 500 360 v
+a 0 u 13 0 15 -1 hln 100 VALUE=10k
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=R17
-a 0 ap 9 0 15 0 hln 100 REFDES=R17
+a 0 ap 9 0 25 2 hln 100 REFDES=R17
+part 377 VDC 140 360 h
+a 0 sp 0 0 22 37 hln 100 PART=VDC
+a 0 a 0:13 0 0 0 hln 100 PKGREF=V5
+a 1 u 13 0 27 22 hcn 100 DC=9
+a 1 ap 9 0 28 11 hcn 100 REFDES=V5
 part 1 titleblk 1520 970 h
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=B
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
 a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
 a 1 s 13 0 300 95 hrn 100 PAGENO=1
-part 485 nodeMarker 140 290 h
-a 0 s 0 0 0 0 hln 100 PROBEVAR=
-a 0 a 0 0 4 22 hlb 100 LABEL=4
-part 487 nodeMarker 500 320 h
-a 0 s 0 0 0 0 hln 100 PROBEVAR=
-a 0 a 0 0 4 22 hlb 100 LABEL=5
 @conn
 w 380
 s 140 340 140 360 381
@@ -167,8 +161,9 @@ s 270 440 270 420 457
 s 270 440 140 440 459
 s 140 440 140 400 461
 s 500 440 380 440 481
+w 478
+s 500 300 500 320 477
 w 464
-s 140 300 140 290 463
 s 380 230 310 230 419
 s 310 230 310 260 408
 s 270 260 270 230 404
@@ -177,9 +172,7 @@ s 440 230 380 230 432
 s 140 230 270 230 465
 s 500 230 440 230 474
 s 500 260 500 230 472
-s 140 290 140 230 486
-w 478
-s 500 300 500 320 477
+s 140 300 140 230 486
 @junction
 j 140 360
 + p 377 +
@@ -298,15 +291,6 @@ j 140 340
 j 140 300
 + p 378 +
 + w 464
-j 140 290
-+ p 485 pin1
-+ w 464
-j 500 320
-+ p 487 pin1
-+ p 476 2
-j 500 320
-+ p 487 pin1
-+ w 478
 @attributes
 a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
 a 0 s 0:13 0 0 0 hln 100 PAGENO=1
