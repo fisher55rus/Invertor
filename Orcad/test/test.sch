@@ -1,4 +1,4 @@
-*version 9.2 253649502
+*version 9.2 2600750363
 u 279
 V? 5
 R? 19
@@ -33,11 +33,11 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 18033 
+pageloc 1 0 18001 
 @status
 n 0 119:03:13:10:27:33;1555140453 e 
 s 0 119:03:13:10:37:23;1555141043 e 
-c 119:03:13:11:06:59;1555142819
+c 119:03:13:10:56:59;1555142219
 *page 1 0 505 357 mc
 @ports
 port 63 GND_ANALOG 420 460 h
@@ -404,7 +404,6 @@ a 1 s 13 0 180 60 hcn 100 PAGETITLE=
 a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
 a 1 s 13 0 300 95 hrn 100 PAGENO=1
 part 270 nodeMarker 670 250 h
-a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 s 0 0 0 0 hln 100 PROBEVAR=R18:1
 a 0 s 0 0 0 0 hln 100 PROBEVAR=
 a 0 a 0 0 4 22 hlb 100 LABEL=1
@@ -954,7 +953,7 @@ t 9 t 5 1040 655 1064 671 0 3
 ÐÈÓ
 r 10 r 0 760 110 840 340
 r 11 r 0 660 110 740 340
+t 12 t 5 690 326 709 340 0 2
+ÄÒ
 t 13 t 5 790 326 820 350 0 5
 Íàãð.
-t 12 t 5 690 326 720 360 0 2
-ÄÒ
