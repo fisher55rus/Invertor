@@ -1,0 +1,3 @@
+ lib=D:\GIT\MAI\Invertor\Orcad\Test_Var\Schematic2.lib, offset=0, size=51
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=41950, size=306
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\opamp.lib", offset=98631, size=1153

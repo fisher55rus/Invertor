@@ -1,5 +1,5 @@
-*version 9.2 2235654469
-u 307
+*version 9.2 1092627716
+u 423
 V? 4
 E? 5
 M? 7
@@ -36,157 +36,145 @@ connectViaLocalLabels 0
 NoStim4ExtIFPortsWarnings 1
 AutoGenStim4ExtIFPorts 1
 @index
-pageloc 1 0 2901 
+pageloc 1 0 2759 
 @status
-n 0 119:02:11:17:15:40;1552313740 e 
-s 2832 119:02:11:17:15:40;1552313740 e 
-c 119:02:11:17:15:38;1552313738
+n 0 119:03:21:18:23:50;1555860230 e 
+s 2832 119:03:21:18:23:50;1555860230 e 
+c 119:03:21:18:23:49;1555860229
 *page 1 0 256 160 ma
 @ports
-port 43 GND_ANALOG 230 250 h
+port 43 GND_ANALOG 150 230 h
 @parts
-part 21 R 300 190 u
-a 0 u 13 0 15 25 hln 100 VALUE=10
-a 0 sp 0 0 0 10 hlb 100 PART=R
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
-a 0 s 0:13 0 0 0 hln 100 GATE=
-a 0 a 0:13 0 0 0 hln 100 PKGREF=R2
-a 0 ap 9 0 15 0 hln 100 REFDES=R2
-part 284 IDC 420 100 h
-a 0 a 0:13 0 0 0 hln 100 PKGREF=I1
-a 1 ap 9 0 20 10 hcn 100 REFDES=I1
-a 0 sp 11 0 20 26 hln 100 PART=IDC
-a 1 u 13 0 -9 21 hcn 100 DC=5A
-part 294 Dbreak 370 140 v
+part 294 Dbreak 240 140 v
 a 0 a 0:13 0 0 0 hln 100 PKGREF=D6
 a 0 ap 9 0 17 28 hln 100 REFDES=D6
 a 0 sp 13 0 3 47 hln 100 MODEL=Dbreak-X
-part 305 IRF840 320 130 h
+part 305 IRF840 190 130 h
 a 0 sp 11 0 10 40 hcn 100 PART=IRF840
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=TO-220AB
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 ap 9 0 5 10 hcn 100 REFDES=M5
 a 0 a 0:13 0 0 0 hln 100 PKGREF=M5
-part 306 IRF840 320 190 h
+part 306 IRF840 190 180 h
 a 0 sp 11 0 10 40 hcn 100 PART=IRF840
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=TO-220AB
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 a 0:13 0 0 0 hln 100 PKGREF=M6
 a 0 ap 9 0 5 10 hcn 100 REFDES=M6
-part 15 VPULSE 230 200 h
+part 3 VDC 130 120 h
+a 0 sp 0 0 22 37 hln 100 PART=VDC
+a 0 a 0:13 0 0 0 hln 100 PKGREF=V1
+a 1 ap 9 0 24 7 hcn 100 REFDES=V1
+a 1 u 13 0 -11 18 hcn 100 DC=100
+part 284 IDC 280 100 h
+a 1 u 13 0 27 31 hcn 100 DC=5A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=I1
+a 1 ap 9 0 26 10 hcn 100 REFDES=I1
+a 0 sp 11 0 22 22 hln 100 PART=IDC
+part 15 VPULSE 150 180 h
+a 1 ap 9 0 -2 10 hcn 100 REFDES=V2
 a 1 u 0 0 0 0 hcn 100 PW=9u
 a 1 u 0 0 0 0 hcn 100 PER=20u
 a 0 a 0:13 0 0 0 hln 100 PKGREF=V2
-a 1 ap 9 0 20 10 hcn 100 REFDES=V2
 a 1 u 0 0 0 0 hcn 100 TD=0
 a 1 u 0 0 0 0 hcn 100 V1=0
 a 1 u 0 0 0 0 hcn 100 V2=15
 a 1 u 0 0 0 0 hcn 100 TR=50n
 a 1 u 0 0 0 0 hcn 100 TF=50n
-part 3 VDC 130 140 h
-a 0 sp 0 0 22 37 hln 100 PART=VDC
-a 0 a 0:13 0 0 0 hln 100 PKGREF=V1
-a 1 ap 9 0 24 7 hcn 100 REFDES=V1
-a 1 u 13 0 -11 18 hcn 100 DC=100
+part 21 R 190 180 u
+a 0 u 13 0 23 3 hln 100 VALUE=10
+a 0 sp 0 0 0 10 hlb 100 PART=R
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
+a 0 s 0:13 0 0 0 hln 100 GATE=
+a 0 a 0:13 0 0 0 hln 100 PKGREF=R2
+a 0 ap 9 0 25 24 hln 100 REFDES=R2
 part 1 titleblk 1024 640 h
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=A4
 a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
 a 1 s 13 0 300 95 hrn 100 PAGENO=1
 @conn
-w 25
-s 230 190 230 200 281
-s 230 190 260 190 263
-w 286
-s 350 80 350 110 52
-s 130 80 350 80 50
-s 130 140 130 80 48
-s 420 100 420 80 285
-s 420 80 370 80 287
-s 370 80 350 80 301
-s 370 110 370 80 299
-w 256
-s 350 250 350 210 40
-s 130 250 130 180 46
-s 230 250 130 250 267
-s 230 250 350 250 38
-s 230 240 230 250 265
-w 23
-s 300 190 320 190 22
 w 290
-s 300 130 320 130 19
-s 300 130 300 160 258
-s 350 170 350 160 34
-s 350 160 350 150 262
-s 300 160 350 160 260
-s 420 140 420 160 289
-s 420 160 370 160 291
-s 370 160 350 160 304
-s 370 140 370 160 302
+s 220 160 220 150 404
+s 220 160 180 160 388
+s 240 160 220 160 358
+s 180 130 190 130 19
+s 180 130 180 160 258
+s 240 140 240 160 302
+s 280 140 280 160 289
+s 280 160 240 160 291
+w 398
+s 220 80 220 110 52
+s 220 80 240 80 391
+s 240 110 240 80 299
+s 240 80 280 80 390
+s 280 100 280 80 285
+s 130 80 220 80 328
+s 130 120 130 80 48
+w 399
+s 220 230 220 200 40
+s 150 230 220 230 416
+s 150 220 150 230 265
+s 130 230 150 230 395
+s 130 230 130 160 46
 @junction
-j 300 190
-+ p 21 1
-+ w 23
-j 350 160
-+ w 290
-+ w 290
-j 230 250
-+ s 43
-+ w 256
-j 260 190
+j 150 180
++ p 15 +
 + p 21 2
-+ w 25
-j 420 100
-+ p 284 +
-+ w 286
-j 350 80
-+ w 286
-+ w 286
-j 420 140
-+ p 284 -
-+ w 290
-j 370 110
-+ p 294 2
-+ w 286
-j 370 80
-+ w 286
-+ w 286
-j 370 140
+j 190 180
++ p 306 g
++ p 21 1
+j 220 200
++ p 306 s
++ w 399
+j 150 230
++ s 43
++ w 399
+j 150 220
++ p 15 -
++ w 399
+j 130 160
++ p 3 -
++ w 399
+j 240 140
 + p 294 1
 + w 290
-j 370 160
-+ w 290
-+ w 290
-j 230 240
-+ p 15 -
-+ w 256
-j 230 200
-+ p 15 +
-+ w 25
-j 350 110
-+ p 305 d
-+ w 286
-j 350 150
+j 240 110
++ p 294 2
++ w 398
+j 220 150
 + p 305 s
 + w 290
-j 320 130
+j 220 160
++ w 290
++ w 290
+j 190 130
 + p 305 g
 + w 290
-j 350 210
-+ p 306 s
-+ w 256
-j 320 190
-+ p 306 g
-+ w 23
-j 350 170
+j 280 140
++ p 284 -
++ w 290
+j 240 160
++ w 290
++ w 290
+j 220 160
 + p 306 d
 + w 290
-j 130 180
-+ p 3 -
-+ w 256
-j 130 140
+j 220 110
++ p 305 d
++ w 398
+j 240 80
++ w 398
++ w 398
+j 280 100
++ p 284 +
++ w 398
+j 220 80
++ w 398
++ w 398
+j 130 120
 + p 3 +
-+ w 286
++ w 398
 @attributes
 a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
 a 0 s 0:13 0 0 0 hln 100 PAGENO=1

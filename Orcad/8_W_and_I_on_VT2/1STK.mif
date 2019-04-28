@@ -1,2 +1,3 @@
- lib="C:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=58821, size=336
- lib="C:\Program Files\Orcad\Capture\Library\PSpice\opamp.lib", offset=98631, size=1153
+ lib=D:\GIT\MAI\Invertor\Orcad\8_W_and_I_on_VT2\1STK.lib, offset=0, size=51
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=58821, size=336
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\opamp.lib", offset=98631, size=1153

@@ -1,0 +1,28 @@
+* D:\GIT\MAI\Invertor\Orcad\9_DC_sweep_18-36v_10ohm\test.sch
+
+* Schematics Version 9.2
+* Sun Apr 21 19:01:47 2019
+
+
+.PARAM         Ep=18 
+
+** Analysis setup **
+.tran 0ns 5ms 2.5ms 1.57u SKIPBP
+.four 400 99 V([V_sence])
+.STEP  PARAM Ep LIST 
++ 18, 20, 22, 24, 26, 27, 28,  30, 32, 34, 36
+.LIB "D:\GIT\MAI\Invertor\Orcad\1_Power_cascade\1STK.lib"
+
+
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
+.lib "nom.lib"
+
+.INC "test.net"
+
+
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END

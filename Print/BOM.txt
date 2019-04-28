@@ -1,0 +1,147 @@
+Bill of Materials
+D:\GIT\MAI\Invertor\Orcad\17_Fulovaya\Full_clear.sch
+Sun Apr 21 22:37:47 2019
+
+
+Item    Count   Mfg ID          Attributes                      RefDes          
+
+1       12      1N4151          DO-35                           D1, D2, D3, D4, 
+                                                                D5, D6, D9, D10,
+                                                                D13, D14, D17,  
+                                                                D18             
+
+2       8       2N3505          TO-18                           Q1, Q2, Q3, Q4, 
+                                                                Q5, Q7, Q11,    
+                                                                Q13             
+
+3       8       2N4014          TO-18                           Q6, Q8, Q9, Q10,
+                                                                Q12, Q14, Q15,  
+                                                                Q16             
+
+4       4       c               CK05                            C7, C8, C9, C10 
+                                22n                                             
+
+5       1       c               CK05                            C11             
+                                10u                                             
+
+6       1       c               CK05                            C6              
+                                220p                                            
+
+7       2       c               CK05                            C4, C5          
+                                33n                                             
+
+8       1       C               CK05                            C3              
+                                2u                                              
+
+9       2       c               CK05                            C1, C2          
+                                100p                                            
+
+10      4       IRF255          TO-204AE                        M13, M14, M15,  
+                                                                M16             
+
+11      10      IRFF110         TO-205AF                        M2, M4, M5, M6, 
+                                                                M7, M8, M9, M10,
+                                                                M11, M12        
+
+12      2       IRFF9110        TO-205AF                        M1, M3          
+
+13      1       L               L2012C                          L6              
+                                5H                                              
+
+14      1       L               L2012C                          L10             
+                                50uH                                            
+
+15      1       L               L2012C                          L9              
+                                5uH                                             
+
+16      1       L               L2012C                          L8              
+                                1mH                                             
+
+17      5       L               L2012C                          L1, L2, L3, L4, 
+                                10m                             L5              
+
+18      1       L               L2012C                          L7              
+                                12mH                                            
+
+19      3       R               RC05                            R1, R25, R49    
+                                100k                                            
+
+20      27      R               RC05                            R2, R3, R4, R7, 
+                                10k                             R8, R9, R10,    
+                                                                R11, R12, R13,  
+                                                                R23, R24, R29,  
+                                                                R34, R35, R36,  
+                                                                R37, R38, R42,  
+                                                                R43, R44, R45,  
+                                                                R46, R54, R58,  
+                                                                R63, R67        
+
+21      13      R               RC05                            R5, R6, R15,    
+                                1k                              R60, R69, R72,  
+                                                                R73, R75, R76,  
+                                                                R78, R79, R81,  
+                                                                R82             
+
+22      1       R               RC05                            R14             
+                                14k                                             
+
+23      1       R               RC05                            R16             
+                                33k                                             
+
+24      1       R               RC05                            R17             
+                                32k                                             
+
+25      7       R               RC05                            R18, R19, R30,  
+                                5k                              R31, R50, R51,  
+                                                                R52             
+
+26      1       R               RC05                            R20             
+                                220k                                            
+
+27      2       R               RC05                            R21, R22        
+                                15k                                             
+
+28      1       R               RC05                            R26             
+                                22k                                             
+
+29      2       R               RC05                            R27, R28        
+                                12.06k                                          
+
+30      1       R               RC05                            R32             
+                                50k                                             
+
+31      2       R               RC05                            R33, R41        
+                                2k                                              
+
+32      2       R               RC05                            R39, R47        
+                                9.5k                                            
+
+33      2       R               RC05                            R40, R48        
+                                2.5k                                            
+
+34      6       R               RC05                            R53, R56, R57,  
+                                3k                              R62, R65, R66   
+
+35      4       R               RC05                            R55, R61, R64,  
+                                470                             R70             
+
+36      2       R               RC05                            R59, R68        
+                                100                                             
+
+37      4       R               RC05                            R71, R74, R77,  
+                                22                              R80             
+
+38      1       R               RC05                            R83             
+                                33                                              
+
+39      5       R               RC05                            R84, R85, R86,  
+                                10                              R87, R88        
+
+40      16      TL082           DIP8                            U1, U2, U3, U4, 
+                                                                U5, U6, U7, U8, 
+                                                                U9, U11, U12,   
+                                                                U13, U14, U15,  
+                                                                U16, U19        
+
+41      3       TL431           TL431                           U10, U17, U18   
+

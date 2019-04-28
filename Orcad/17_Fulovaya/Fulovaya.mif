@@ -1,0 +1,10 @@
+ lib=D:\GIT\MAI\Invertor\Orcad\1_Power_cascade\1STK.lib, offset=0, size=51
+ lib="D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib", offset=528, size=954
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\diode.lib", offset=26387, size=273
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\breakout.lib", offset=366, size=46
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=133855, size=339
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=111181, size=1096
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\pwrmos.lib", offset=41950, size=306
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\bipolar.lib", offset=171554, size=325
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\bipolar.lib", offset=216836, size=313
+ lib="d:\Program Files\Orcad\Capture\Library\PSpice\opamp.lib", offset=98631, size=1153

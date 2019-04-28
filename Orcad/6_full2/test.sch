@@ -1,5 +1,5 @@
-*version 9.2 110703174
-u 375
+*version 9.2 136372433
+u 380
 V? 5
 R? 22
 LIMIT? 2
@@ -35,9 +35,9 @@ AutoGenStim4ExtIFPorts 1
 @index
 pageloc 1 0 19547 
 @status
-n 0 119:03:13:11:15:39;1555143339 e 
-s 0 119:03:13:11:15:48;1555143348 e 
-c 119:03:13:11:22:20;1555143740
+n 0 119:03:21:16:23:42;1555853022 e 
+s 2832 119:03:21:16:23:42;1555853022 e 
+c 119:03:21:16:23:40;1555853020
 *page 1 0 505 357 mc
 @ports
 port 64 BUBBLE 530 460 H
@@ -96,15 +96,15 @@ a 1 x 3 0 20 12 hcn 100 LABEL=bb
 port 81 GND_ANALOG 1090 540 h
 port 82 BUBBLE 1090 490 V
 a 1 x 3 0 20 8 hcn 100 LABEL=aa
-port 307 BUBBLE 400 300 H
-a 1 x 3 0 0 0 hcn 100 LABEL=-15
-port 309 GND_ANALOG 350 350 h
-port 310 BUBBLE 310 270 D
-a 1 x 3 0 2 -18 hcn 100 LABEL=V_sence
-port 308 BUBBLE 400 360 u
-a 1 x 3 0 -4 10 hcn 100 LABEL=+15
 port 271 BUBBLE 670 250 U
 a 1 x 3 0 18 2 hcn 100 LABEL=I_sence
+port 307 BUBBLE 400 290 H
+a 1 x 3 0 0 0 hcn 100 LABEL=-15
+port 309 GND_ANALOG 350 340 h
+port 310 BUBBLE 310 260 D
+a 1 x 3 0 2 -18 hcn 100 LABEL=V_sence
+port 308 BUBBLE 400 350 u
+a 1 x 3 0 -4 10 hcn 100 LABEL=+15
 @parts
 part 16 R 500 410 U
 a 0 sp 0 0 0 10 hlb 100 PART=R
@@ -400,27 +400,33 @@ a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP8
 a 0 s 0:13 0 0 0 hln 100 GATE=A
 a 0 ap 9 0 14 0 hln 100 REFDES=U4A
 a 0 a 0:13 0 0 0 hln 100 PKGREF=U4
-part 303 R 360 270 U
+part 303 R 360 260 U
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 u 13 0 25 1 hln 100 VALUE=5k
 a 0 a 0:13 0 0 0 hln 100 PKGREF=R20
 a 0 ap 9 0 25 26 hln 100 REFDES=R20
-part 302 R 310 270 U
+part 302 R 310 260 U
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 u 13 0 25 1 hln 100 VALUE=50k
 a 0 a 0:13 0 0 0 hln 100 PKGREF=R19
 a 0 ap 9 0 25 26 hln 100 REFDES=R19
-part 304 R 440 270 U
+part 304 R 440 260 U
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
 a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 u 13 0 25 1 hln 100 VALUE=5k
 a 0 a 0:13 0 0 0 hln 100 PKGREF=R21
 a 0 ap 9 0 25 26 hln 100 REFDES=R21
+part 301 TL082 360 340 U
+a 0 sp 11 0 38 34 hln 100 PART=TL082
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP8
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 ap 9 0 6 32 hln 100 REFDES=U5A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U5
 part 15 R 450 410 U
 a 0 sp 0 0 0 10 hlb 100 PART=R
 a 0 s 0:13 0 0 0 hln 100 PKGTYPE=RC05
@@ -428,12 +434,6 @@ a 0 s 0:13 0 0 0 hln 100 GATE=
 a 0 u 13 0 25 1 hln 100 VALUE=5k
 a 0 a 0:13 0 0 0 hln 100 PKGREF=R1
 a 0 ap 9 0 25 26 hln 100 REFDES=R1
-part 301 TL082 360 350 U
-a 0 sp 11 0 38 34 hln 100 PART=TL082
-a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP8
-a 0 s 0:13 0 0 0 hln 100 GATE=A
-a 0 ap 9 0 6 32 hln 100 REFDES=U5A
-a 0 a 0:13 0 0 0 hln 100 PKGREF=U5
 part 1 titleblk 2020 1428 h
 a 1 s 13 0 350 10 hcn 100 PAGESIZE=A2
 a 1 s 13 0 180 60 hcn 100 PAGETITLE=
@@ -542,22 +542,22 @@ s 1000 510 1000 460 150
 s 1010 510 1000 510 148
 w 147
 s 1090 500 1090 490 146
-w 104
-s 490 410 490 470 103
-s 500 410 490 410 105
-s 490 270 480 270 368
-s 490 270 490 410 345
-w 280
-s 350 350 360 350 279
-w 321
-s 350 270 360 270 295
-s 360 270 360 310 293
-w 282
-s 440 270 400 270 336
-s 440 330 440 270 285
 w 265
 s 670 250 680 250 264
 s 670 250 670 170 266
+w 104
+s 490 410 490 470 103
+s 500 410 490 410 105
+s 490 260 490 410 345
+s 490 260 480 260 368
+w 282
+s 440 320 440 260 285
+s 440 260 400 260 336
+w 321
+s 360 260 360 300 293
+s 350 260 360 260 295
+w 280
+s 350 340 360 340 279
 @junction
 j 530 110
 + p 36 3
@@ -973,42 +973,42 @@ j 1090 490
 j 1090 490
 + s 82
 + w 147
-j 400 300
-+ p 301 V-
-+ s 307
-j 310 270
+j 310 260
 + p 302 1
 + s 310
-j 480 270
-+ p 304 2
-+ w 104
-j 360 350
-+ p 301 +
-+ w 280
-j 350 350
-+ s 309
-+ w 280
-j 360 270
-+ p 303 1
-+ w 321
-j 350 270
-+ p 302 2
-+ w 321
-j 360 310
-+ p 301 -
-+ w 321
-j 400 270
-+ p 303 2
-+ w 282
-j 440 270
+j 400 290
++ p 301 V-
++ s 307
+j 400 350
++ p 301 V+
++ s 308
+j 440 260
 + p 304 1
 + w 282
-j 440 330
+j 440 320
 + p 301 OUT
 + w 282
-j 400 360
-+ s 308
-+ p 301 V+
+j 400 260
++ p 303 2
++ w 282
+j 360 260
++ p 303 1
++ w 321
+j 360 300
++ p 301 -
++ w 321
+j 350 260
++ p 302 2
++ w 321
+j 360 340
++ p 301 +
++ w 280
+j 350 340
++ s 309
++ w 280
+j 480 260
++ p 304 2
++ w 104
 @attributes
 a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
 a 0 s 0:13 0 0 0 hln 100 PAGENO=1
@@ -1016,13 +1016,7 @@ a 0 s 0:13 0 0 0 hln 100 PAGESIZE=A2
 a 0 s 0:13 0 0 0 hln 100 PAGECOUNT=1
 @graphics
 r 3 r 0 590 380 660 450
-t 4 t 5 490 556 536 570 0 9
-Усилитель
-t 5 t 5 610 436 635 450 0 3
-ОУН
 r 6 r 0 670 380 880 570
-t 7 t 5 750 556 800 580 0 8
-Сумматор
 r 10 r 0 760 110 840 340
 r 11 r 0 660 110 740 340
 t 13 t 5 790 326 820 350 0 5
@@ -1030,7 +1024,13 @@ t 13 t 5 790 326 820 350 0 5
 t 12 t 5 690 326 720 360 0 2
 ДТ
 r 8 r 0 970 240 1130 590
-t 9 t 5 1040 575 1070 600 0 3
+r 2 r 0 450 390 580 570
+t 5 t 5 610 436 650 450 0 3
+ОУН
+t 4 t 5 490 556 550 570 0 9
+Усилитель
+t 7 t 5 750 556 810 580 0 8
+Сумматор
+t 9 t 5 1040 575 1080 590 0 3
 РИУ
-r 2 r 0 450 570 580 390
-r 361 r 0 310 240 480 390
+r 361 r 0 310 230 480 380

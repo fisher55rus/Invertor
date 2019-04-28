@@ -1,0 +1,238 @@
+
+**** 04/21/19 20:31:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\11_constant_current_transform\trash\Schematic2.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.2
+* Sun Apr 21 20:31:24 2019
+
+
+.PARAM         Ep=27 Rvar=5 
+
+** Analysis setup **
+.tran 0ns 50ms 0 1.57u SKIPBP
+.OPTIONS ABSTOL=1uA
+.OPTIONS ITL4=60
+.OPTIONS RELTOL=0.01
+.LIB "D:\GIT\MAI\Invertor\Orcad\Test_Var\Schematic2.lib"
+
+
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
+.lib "nom.lib"
+
+.INC "Schematic2.net"
+
+
+
+**** INCLUDING Schematic2.net ****
+* Schematics Netlist *
+
+
+
+M_M1         $N_0002 $N_0001 cc cc IRF255
+M_M2         cc $N_0003 0 0 IRF255
+M_M3         $N_0002 $N_0004 dd dd IRF255
+M_M4         dd $N_0005 0 0 IRF255
+L_L1         $N_0006 $N_0007  1mH  
+L_L2         cc $N_0006  5uH  
+L_L3         $N_0007 dd  50uH  
+R_R9         $N_0005 $N_0008  10  
+R_R10         $N_0004 $N_0009  10  
+E_E1         $N_0010 0 bb 0 1
+E_E2         $N_0011 cc aa 0 1
+E_E3         $N_0009 dd bb 0 1
+E_E4         $N_0008 0 aa 0 1
+R_R13         $N_0001 $N_0011  10  
+R_R14         $N_0003 $N_0010  10  
+L_L4         V_sence 0  12m  
+L_L5         0 I_sence  5  
+C_C3         V_sence 0  10u  
+D_D5         cc $N_0002 Dbreak-X 
+D_D6         0 cc Dbreak-X 
+D_D7         0 dd Dbreak-X 
+D_D8         dd $N_0002 Dbreak-X 
+Kn_K1         L_L2 L_L5     1
+Kn_K2         L_L1 L_L4     1
+R_R22         V_sence 0  {Rvar}  
+V_V4         $N_0002 0 {Ep}
+R_R16         0 I_sence  27  
+R_R1         $N_0012 V_correct  5k  
+R_R2         V_correct $N_0013  100k  
+R_R3         $N_0015 $N_0014  1k  
+C_C1         $N_0016 0  100p  
+E_LIMIT1         $N_0015 0 VALUE {LIMIT(V($N_0013),-1,1)}
+R_R4         $N_0018 $N_0017  10k  
+C_C2         $N_0017 0  100p  
+R_R5         $N_0019 +15  10k  
+R_R6         0 $N_0019  10k  
+R_R7         $N_0020 0  10k  
+R_R8         -15 $N_0020  10k  
+X_U1A         0 V_correct +15 -15 $N_0013 TL082
+R_R11         0 bb  10k  
+R_R12         0 aa  10k  
+V_V1         $N_0012 0  
++SIN 0 5 400 0 0 0
+X_U2A         $N_0014 $N_0016 +15 -15 $N_0018 TL082
+R_R15         I_sence $N_0016  1k  
+X_U3A         $N_0017 $N_0019 +15 -15 bb TL082
+X_U4A         $N_0020 $N_0017 +15 -15 aa TL082
+V_V2         -15 0 -15
+V_V3         +15 0 15
+R_R17         $N_0021 V_correct  5k  
+X_U5A         0 $N_0022 +15 -15 $N_0021 TL082
+R_R18         $N_0022 $N_0021  5k  
+R_R19         V_sence $N_0022  50k  
+R_R20         V_sence $N_0023  5k  
+C_C4         $N_0023 $N_0022  220p  
+R_R21         $N_0014 $N_0018  100k  
+X_U6A         $N_0024 $N_0025 +15 -15 $N_0026 TL082
+R_R23         dd $N_0025  32k  
+R_R24         cc $N_0024  33k  
+R_R25         $N_0025 $N_0026  5k  
+R_R27         $N_0026 $N_0027  220k  
+R_R26         $N_0024 0  5k  
+X_U7A         0 $N_0027 +15 -15 $N_0028 TL082
+C_C5         $N_0027 $N_0028  2u  
+R_R28         $N_0028 V_correct  5k  
+
+**** RESUMING Schematic2.cir ****
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+
+
+.END
+
+**** 04/21/19 20:31:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\11_constant_current_transform\trash\Schematic2.sch
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak-X        X_U1A.dx        X_U1A.dy        X_U2A.dx        
+          IS  100.000000E-12  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS     .05            1               1.000000E-03    1            
+         CJO  150.000000E-12                   10.000000E-12                 
+
+
+               X_U2A.dy        X_U3A.dx        X_U3A.dy        X_U4A.dx        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U4A.dy        X_U5A.dx        X_U5A.dy        X_U6A.dx        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03    1            
+         CJO   10.000000E-12                   10.000000E-12                 
+
+
+               X_U6A.dy        X_U7A.dx        X_U7A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1.000000E-03    1               1.000000E-03 
+         CJO   10.000000E-12                   10.000000E-12 
+
+
+**** 04/21/19 20:31:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\11_constant_current_transform\trash\Schematic2.sch
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.jx        X_U2A.jx        X_U3A.jx        X_U4A.jx        
+               NJF             NJF             NJF             NJF             
+         VTO   -1              -1              -1              -1            
+        BETA  984.200000E-06  984.200000E-06  984.200000E-06  984.200000E-06 
+          IS    2.500000E-12    2.500000E-12    2.500000E-12    2.500000E-12 
+
+
+               X_U5A.jx        X_U6A.jx        X_U7A.jx        
+               NJF             NJF             NJF             
+         VTO   -1              -1              -1            
+        BETA  984.200000E-06  984.200000E-06  984.200000E-06 
+          IS    2.500000E-12    2.500000E-12    2.500000E-12 
+
+
+**** 04/21/19 20:31:24 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+
+ * D:\GIT\MAI\Invertor\Orcad\11_constant_current_transform\trash\Schematic2.sch
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF255          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W   28            
+         VTO    3.686        
+          KP    1.040000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.000000E-03 
+          RS     .01         
+          RG    7.008        
+          RB    6.906000E-03 
+         RDS    1.000000E+06 
+          IS  562.200000E-09 
+          JS    0            
+           N    1.833        
+          PB    2.532        
+        PBSW    2.532        
+         CBD    5.886000E-09 
+          CJ    0            
+        CJSW    0            
+          MJ    1.089        
+        CGSO   43.180000E-12 
+        CGDO    7.890000E-12 
+        CGBO    0            
+         TOX    2.000000E-06 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    0            
+       XPART    0            
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME           34.35
+

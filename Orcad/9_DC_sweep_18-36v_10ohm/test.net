@@ -1,0 +1,60 @@
+* Schematics Netlist *
+
+
+
+R_R2         $N_0002 $N_0001  100k  
+R_R3         $N_0004 $N_0003  1k  
+X_U1A         0 $N_0002 +15 -15 $N_0001 TL082
+R_R4         I_sence $N_0005  1k  
+X_U2A         $N_0003 $N_0005 +15 -15 $N_0006 TL082
+C_C1         $N_0005 0  100p  
+R_R5         $N_0003 $N_0006  100k  
+R_R6         $N_0006 $N_0007  10k  
+R_R14         $N_0009 $N_0008  10  
+E_E1         $N_0010 $N_0011 aa 0 1
+L_L1         0 I_sence  5H  
+R_R15         I_sence 0  33  
+D_D1         $N_0011 $N_0012 Dbreak-X 
+E_E2         $N_0008 0 bb 0 1
+M_M2         $N_0011 $N_0009 0 0 IRF255
+D_D2         0 $N_0011 Dbreak-X 
+L_L2         V_sence 0  12mH  
+M_M3         $N_0012 $N_0014 $N_0013 $N_0013 IRF255
+M_M4         $N_0013 $N_0015 0 0 IRF255
+E_E3         $N_0016 $N_0013 bb 0 1
+E_E4         $N_0017 0 aa 0 1
+R_R16         $N_0015 $N_0017  10  
+R_R17         $N_0014 $N_0016  10  
+D_D3         0 $N_0013 Dbreak-X 
+D_D4         $N_0013 $N_0012 Dbreak-X 
+L_L3         $N_0018 $N_0013  50uH  
+L_L4         $N_0019 $N_0018  1mH  
+Kn_K1         L_L5 L_L1     1
+Kn_K2         L_L4 L_L2     1
+L_L5         $N_0011 $N_0019  5uH  
+E_LIMIT1         $N_0004 0 VALUE {LIMIT(V($N_0001),-1,1)}
+C_C2         $N_0007 0  100p  
+R_R18         V_sence 0  10  
+V_V3         -15 0 -15
+V_V4         +15 0 15
+V_V1         $N_0020 0  
++SIN 0 5 400 0 0 0
+R_R7         $N_0021 +15  10k  
+R_R8         0 $N_0021  10k  
+R_R9         $N_0022 0  10k  
+R_R10         -15 $N_0022  10k  
+R_R11         0 bb  10k  
+X_U3A         $N_0007 $N_0021 +15 -15 bb TL082
+R_R12         0 aa  10k  
+X_U4A         $N_0022 $N_0007 +15 -15 aa TL082
+R_R1         $N_0020 $N_0002  5k  
+R_R22         V_sence $N_0023  5k  
+R_R21         $N_0024 $N_0002  5k  
+R_R20         $N_0025 $N_0024  5k  
+X_U5A         0 $N_0025 +15 -15 $N_0024 TL082
+R_R19         V_sence $N_0025  50k  
+C_C3         V_sence 0  10u  
+C_C4         $N_0025 $N_0023  220p  
+M_M1         $N_0012 $N_0026 $N_0011 $N_0011 IRF255
+R_R13         $N_0026 $N_0010  10  
+V_V2         $N_0012 0 {Ep}

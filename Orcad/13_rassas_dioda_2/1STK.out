@@ -1,5 +1,5 @@
 
-**** 03/11/19 17:15:40 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/21/19 18:23:51 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
  * D:\GIT\MAI\Invertor\Orcad\13_rassas_dioda_2\1STK.sch
 
@@ -13,7 +13,7 @@
 
 
 * Schematics Version 9.2
-* Mon Mar 11 17:15:40 2019
+* Sun Apr 21 18:23:50 2019
 
 
 
@@ -39,14 +39,14 @@
 
 
 
-R_R2         $N_0002 $N_0001  10  
-I_I1         $N_0003 $N_0004 DC 5A  
-D_D6         $N_0004 $N_0003 Dbreak-X 
-M_M5         $N_0003 $N_0004 $N_0004 $N_0004 IRF840
-M_M6         $N_0004 $N_0002 0 0 IRF840
-V_V2         $N_0001 0  
+D_D6         $N_0001 $N_0002 Dbreak-X 
+M_M5         $N_0002 $N_0001 $N_0001 $N_0001 IRF840
+M_M6         $N_0001 $N_0003 0 0 IRF840
+V_V1         $N_0002 0 100
+I_I1         $N_0002 $N_0001 DC 5A  
+V_V2         $N_0004 0  
 +PULSE 0 15 0 50n 50n 9u 20u
-V_V1         $N_0003 0 100
+R_R2         $N_0003 $N_0004  10  
 
 **** RESUMING 1STK.cir ****
 .PROBE V(*) I(*) W(*) D(*) NOISE(*) 
@@ -54,7 +54,7 @@ V_V1         $N_0003 0 100
 
 .END
 
-**** 03/11/19 17:15:40 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/21/19 18:23:51 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
  * D:\GIT\MAI\Invertor\Orcad\13_rassas_dioda_2\1STK.sch
 
@@ -73,7 +73,7 @@ V_V1         $N_0003 0 100
          CJO  150.000000E-12 
 
 
-**** 03/11/19 17:15:40 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
+**** 04/21/19 18:23:51 ********* PSpice 9.2 (Mar 2000) ******** ID# 1 ********
 
  * D:\GIT\MAI\Invertor\Orcad\13_rassas_dioda_2\1STK.sch
 
@@ -129,5 +129,5 @@ V_V1         $N_0003 0 100
 
           JOB CONCLUDED
 
-          TOTAL JOB TIME             .08
+          TOTAL JOB TIME             .13
 

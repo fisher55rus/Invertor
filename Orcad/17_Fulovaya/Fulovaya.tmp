@@ -1,0 +1,815 @@
+*PCBoards Netlist Version 9.2: Format 1.0
+*timestamp: netlist 1555875186
+*component c CK05 C1
+@attribute VALUE=100p
+*component c CK05 C2
+@attribute VALUE=100p
+*component c CK05 C3
+@attribute VALUE=10u
+*component c CK05 C4
+@attribute VALUE=220p
+*component C CK05 C5
+@attribute VALUE=2u
+*component c CK05 C6
+@attribute VALUE=33n
+*component c CK05 C7
+@attribute VALUE=33n
+*component c CK05 C9
+@attribute VALUE=22n
+*component c CK05 C11
+@attribute VALUE=22n
+*component c CK05 C12
+@attribute VALUE=22n
+*component c CK05 C13
+@attribute VALUE=22n
+*component 1N4151 DO-35 D5
+*component 1N4151 DO-35 D6
+*component 1N4151 DO-35 D7
+*component 1N4151 DO-35 D8
+*component 1N4151 DO-35 D15
+*component 1N4151 DO-35 D16
+*component 1N4151 DO-35 D21
+*component 1N4151 DO-35 D22
+*component 1N4151 DO-35 D25
+*component 1N4151 DO-35 D26
+*component 1N4151 DO-35 D29
+*component 1N4151 DO-35 D30
+*component L L2012C L1
+@attribute VALUE=5H
+*component L L2012C L2
+@attribute VALUE=12mH
+*component L L2012C L3
+@attribute VALUE=50uH
+*component L L2012C L4
+@attribute VALUE=1mH
+*component L L2012C L5
+@attribute VALUE=5uH
+*component L L2012C L8
+@attribute VALUE=10m
+*component L L2012C L10
+@attribute VALUE=10m
+*component L L2012C L11
+@attribute VALUE=10m
+*component L L2012C L12
+@attribute VALUE=10m
+*component L L2012C L13
+@attribute VALUE=10m
+*component IRF255 TO-204AE M1
+*component IRF255 TO-204AE M2
+*component IRF255 TO-204AE M3
+*component IRF255 TO-204AE M4
+*component IRFF110 TO-205AF M8
+*component IRFF9110 TO-205AF M9
+*component IRFF110 TO-205AF M12
+*component IRFF110 TO-205AF M13
+*component IRFF110 TO-205AF M18
+*component IRFF110 TO-205AF M19
+*component IRFF110 TO-205AF M20
+*component IRFF110 TO-205AF M21
+*component IRFF110 TO-205AF M22
+*component IRFF110 TO-205AF M23
+*component IRFF9110 TO-205AF M24
+*component IRFF110 TO-205AF M25
+*component 2N3505 TO-18 Q1
+*component 2N3505 TO-18 Q2
+*component 2N3505 TO-18 Q3
+*component 2N3505 TO-18 Q4
+*component 2N4014 TO-18 Q5
+*component 2N4014 TO-18 Q6
+*component 2N3505 TO-18 Q7
+*component 2N4014 TO-18 Q8
+*component 2N4014 TO-18 Q9
+*component 2N3505 TO-18 Q10
+*component 2N3505 TO-18 Q17
+*component 2N4014 TO-18 Q18
+*component 2N3505 TO-18 Q19
+*component 2N4014 TO-18 Q20
+*component 2N4014 TO-18 Q21
+*component 2N4014 TO-18 Q22
+*component R RC05 R1
+@attribute VALUE=5k
+*component R RC05 R2
+@attribute VALUE=100k
+*component R RC05 R3
+@attribute VALUE=1k
+*component R RC05 R4
+@attribute VALUE=1k
+*component R RC05 R5
+@attribute VALUE=100k
+*component R RC05 R6
+@attribute VALUE=10k
+*component R RC05 R7
+@attribute VALUE=10k
+*component R RC05 R8
+@attribute VALUE=10k
+*component R RC05 R9
+@attribute VALUE=10k
+*component R RC05 R10
+@attribute VALUE=10k
+*component R RC05 R11
+@attribute VALUE=10k
+*component R RC05 R12
+@attribute VALUE=10k
+*component R RC05 R13
+@attribute VALUE=10
+*component R RC05 R14
+@attribute VALUE=10
+*component R RC05 R15
+@attribute VALUE=33
+*component R RC05 R16
+@attribute VALUE=10
+*component R RC05 R17
+@attribute VALUE=10
+*component R RC05 R18
+@attribute VALUE=10
+*component R RC05 R19
+@attribute VALUE=50k
+*component R RC05 R20
+@attribute VALUE=5k
+*component R RC05 R21
+@attribute VALUE=5k
+*component R RC05 R22
+@attribute VALUE=5k
+*component R RC05 R23
+@attribute VALUE=32k
+*component R RC05 R24
+@attribute VALUE=33k
+*component R RC05 R25
+@attribute VALUE=5k
+*component R RC05 R26
+@attribute VALUE=220k
+*component R RC05 R27
+@attribute VALUE=5k
+*component R RC05 R28
+@attribute VALUE=5k
+*component R RC05 R29
+@attribute VALUE=12.06k
+*component R RC05 R30
+@attribute VALUE=12.06k
+*component R RC05 R31
+@attribute VALUE=10k
+*component R RC05 R32
+@attribute VALUE=10k
+*component R RC05 R33
+@attribute VALUE=100k
+*component R RC05 R34
+@attribute VALUE=15k
+*component R RC05 R35
+@attribute VALUE=15k
+*component R RC05 R36
+@attribute VALUE=10k
+*component R RC05 R37
+@attribute VALUE=22k
+*component R RC05 R38
+@attribute VALUE=10k
+*component R RC05 R39
+@attribute VALUE=10k
+*component R RC05 R40
+@attribute VALUE=10k
+*component R RC05 R41
+@attribute VALUE=14k
+*component R RC05 R42
+@attribute VALUE=1k
+*component R RC05 R43
+@attribute VALUE=2k
+*component R RC05 R44
+@attribute VALUE=9.5k
+*component R RC05 R45
+@attribute VALUE=2.5k
+*component R RC05 R46
+@attribute VALUE=10k
+*component R RC05 R47
+@attribute VALUE=10k
+*component R RC05 R48
+@attribute VALUE=10k
+*component R RC05 R49
+@attribute VALUE=10k
+*component R RC05 R50
+@attribute VALUE=10k
+*component R RC05 R51
+@attribute VALUE=2k
+*component R RC05 R52
+@attribute VALUE=10k
+*component R RC05 R53
+@attribute VALUE=10k
+*component R RC05 R54
+@attribute VALUE=10k
+*component R RC05 R55
+@attribute VALUE=10k
+*component R RC05 R56
+@attribute VALUE=10k
+*component R RC05 R57
+@attribute VALUE=9.5k
+*component R RC05 R58
+@attribute VALUE=2.5k
+*component R RC05 R64
+@attribute VALUE=10k
+*component R RC05 R65
+@attribute VALUE=3k
+*component R RC05 R66
+@attribute VALUE=3k
+*component R RC05 R67
+@attribute VALUE=470
+*component R RC05 R68
+@attribute VALUE=1k
+*component R RC05 R69
+@attribute VALUE=470
+*component R RC05 R70
+@attribute VALUE=10k
+*component R RC05 R71
+@attribute VALUE=100
+*component R RC05 R81
+@attribute VALUE=22
+*component R RC05 R83
+@attribute VALUE=1k
+*component R RC05 R84
+@attribute VALUE=1k
+*component R RC05 R89
+@attribute VALUE=3k
+*component R RC05 R90
+@attribute VALUE=22
+*component R RC05 R91
+@attribute VALUE=1k
+*component R RC05 R92
+@attribute VALUE=1k
+*component R RC05 R93
+@attribute VALUE=22
+*component R RC05 R94
+@attribute VALUE=1k
+*component R RC05 R95
+@attribute VALUE=1k
+*component R RC05 R96
+@attribute VALUE=22
+*component R RC05 R97
+@attribute VALUE=1k
+*component R RC05 R98
+@attribute VALUE=1k
+*component R RC05 R99
+@attribute VALUE=3k
+*component R RC05 R100
+@attribute VALUE=10k
+*component R RC05 R101
+@attribute VALUE=470
+*component R RC05 R102
+@attribute VALUE=3k
+*component R RC05 R103
+@attribute VALUE=3k
+*component R RC05 R104
+@attribute VALUE=10k
+*component R RC05 R105
+@attribute VALUE=100
+*component R RC05 R106
+@attribute VALUE=1k
+*component R RC05 R107
+@attribute VALUE=470
+*component TL082 DIP8 U1
+*component TL082 DIP8 U2
+*component TL082 DIP8 U3
+*component TL082 DIP8 U4
+*component TL082 DIP8 U5
+*component TL082 DIP8 U6
+*component TL082 DIP8 U7
+*component TL082 DIP8 U8
+*component TL082 DIP8 U9
+*component TL082 DIP8 U10
+*component TL431 TL431 U11
+*component TL082 DIP8 U12
+*component TL082 DIP8 U13
+*component TL082 DIP8 U14
+*component TL082 DIP8 U15
+*component TL082 DIP8 U16
+*component TL082 DIP8 U17
+*component TL431 TL431 U18
+*component TL431 TL431 U19
+*net +15
++ U2.8
++ U14.8
++ U16.8
++ U15.8
++ U17.8
++ R7.2
++ U3.8
++ U4.8
++ R41.2
++ U6.8
++ U7.8
++ R34.2
++ U9.8
++ U12.8
++ U10.8
++ U8.8
++ U13.8
++ U5.8
++ Q2.3
++ R50.2
++ U1.8
+*net -15
++ U2.4
++ U14.4
++ U16.4
++ U15.4
++ U17.4
++ U3.4
++ R10.1
++ U4.4
++ U6.4
++ U7.4
++ U9.4
++ U12.4
++ U10.4
++ U8.4
++ U13.4
++ U5.4
++ Q4.3
++ R56.2
++ U1.4
+*net 0
++ C1.2
++ U15.3
++ R11.1
++ R8.1
++ R9.2
++ R12.1
++ C2.2
++ R42.1
++ R27.2
++ U7.3
++ U11.2
++ R35.1
++ U9.3
++ R37.1
++ R30.1
++ U5.3
++ U18.2
++ R50.1
++ R45.1
++ U19.2
++ R56.1
++ R58.1
++ U1.3
++ Q7.3
++ Q6.1
++ Q5.1
++ R68.1
++ Q8.1
++ R67.1
++ M8.1
++ Q19.3
++ Q20.1
++ Q21.1
++ R106.1
++ Q22.1
++ R107.1
++ M25.1
++ C11.1
++ M19.1
++ R92.1
++ C13.1
++ M23.1
++ R98.1
++ L1.1
++ R15.2
++ M2.2
++ L2.2
++ C3.2
++ R18.2
++ M4.2
+*net A1+
++ R81.2
++ M13.3
++ R83.2
++ R13.2
+*net A2+
++ R90.2
++ M19.3
++ R92.2
+*net aa
++ R12.2
++ U4.1
++ R64.1
+*net B1+
++ R93.2
++ M21.3
++ R95.2
++ R17.2
+*net B2+
++ R96.2
++ M23.3
++ R98.2
++ R14.2
++ R16.2
+*net bb
++ R11.2
++ U3.1
++ R104.1
+*net cc
++ R24.1
++ C9.1
++ M13.1
++ R83.1
++ M2.3
++ L5.1
++ M1.2
+*net dd
++ R23.1
++ C12.1
++ M21.1
++ R95.1
++ M3.2
++ M4.3
++ L3.2
+*net I_sence
++ R4.1
++ L1.2
++ R15.1
+*net NN_0001
++ U2.3
++ R5.1
++ R3.2
+*net NN_0002
++ U2.2
++ C1.1
++ R4.2
+*net NN_0003
++ U2.1
++ R5.2
++ R6.1
+*net NN_0004
++ R38.2
++ U15.1
++ U17.3
+*net NN_0005
++ R38.1
++ R39.1
++ U15.2
+*net NN_0006
++ U14.3
++ R41.1
++ R42.2
+*net NN_0007
++ U14.2
++ U14.1
++ U16.3
++ R39.2
+*net NN_0008
++ U16.2
++ D7.1
++ D8.2
++ U17.2
++ R40.2
++ R3.1
+*net NN_0009
++ U16.1
++ D7.2
+*net NN_0010
++ D8.1
++ U17.1
+*net NN_0011
++ R40.1
++ R2.2
++ U1.1
+*net NN_0012
++ R7.1
++ U3.2
++ R8.2
+*net NN_0013
++ U3.3
++ U4.2
++ C2.1
++ R6.2
+*net NN_0014
++ R9.1
++ R10.2
++ U4.3
+*net NN_0015
++ R24.2
++ U6.3
++ R27.1
+*net NN_0016
++ R23.2
++ R25.1
++ U6.2
+*net NN_0017
++ R25.2
++ U6.1
++ R26.1
+*net NN_0018
++ R26.2
++ C5.1
++ U7.2
+*net NN_0019
++ C5.2
++ U7.1
++ R28.1
+*net NN_0020
++ U11.1
++ U11.3
++ R34.1
++ R35.2
++ U12.3
+*net NN_0021
++ R31.2
++ U9.1
++ U10.3
+*net NN_0022
++ R31.1
++ R32.1
++ U9.2
+*net NN_0023
++ R32.2
++ U12.2
++ U12.1
++ U8.3
+*net NN_0024
++ D5.1
++ D6.2
++ U10.2
++ U8.2
++ R33.1
+*net NN_0025
++ D5.2
++ U8.1
+*net NN_0026
++ D6.1
++ U10.1
+*net NN_0027
++ C6.1
++ U13.2
++ R29.1
+*net NN_0028
++ C6.2
++ R30.2
++ C7.1
+*net NN_0029
++ R33.2
++ R37.2
++ U13.3
++ R36.1
+*net NN_0030
++ U13.1
++ R29.2
++ R36.2
++ C7.2
++ R1.1
+*net NN_0031
++ R22.2
++ C4.2
+*net NN_0032
++ R20.2
++ U5.1
++ R21.1
+*net NN_0033
++ R20.1
++ U5.2
++ R19.2
++ C4.1
+*net NN_0034
++ Q1.2
++ R46.1
++ R49.2
+*net NN_0035
++ Q1.3
++ R43.1
++ R44.2
+*net NN_0036
++ Q1.1
++ R43.2
++ R46.2
++ R47.2
++ Q2.1
+*net NN_0037
++ R47.1
++ R48.2
++ Q2.2
+*net NN_0038
++ R48.1
++ R49.1
++ U18.3
+*net NN_0039
++ U18.1
++ R44.1
++ R45.2
+*net NN_0040
++ Q3.2
++ R52.1
++ R55.2
+*net NN_0041
++ Q3.3
++ R51.1
++ R57.2
+*net NN_0042
++ Q3.1
++ R51.2
++ R52.2
++ R53.2
++ Q4.1
+*net NN_0043
++ R53.1
++ R54.2
++ Q4.2
+*net NN_0044
++ R54.1
++ R55.1
++ U19.3
+*net NN_0045
++ U19.1
++ R57.1
++ R58.2
+*net NN_0046
++ R2.1
++ U1.2
++ R1.2
++ R21.2
++ R28.2
+*net NN_0047
++ R70.2
++ R69.2
++ Q10.1
++ M9.1
++ R89.2
++ Q9.3
+*net NN_0048
++ R65.2
++ R69.1
++ Q10.2
+*net NN_0049
++ R65.1
++ Q7.1
+*net NN_0050
++ R70.1
++ Q6.2
++ Q5.3
+*net NN_0051
++ Q10.3
++ M9.2
++ R71.2
+*net NN_0052
++ M9.3
++ M8.3
++ L8.1
+*net NN_0053
++ R89.1
++ Q9.2
++ Q7.2
++ Q6.3
+*net NN_0054
++ R66.2
++ Q9.1
+*net NN_0055
++ R66.1
++ Q8.2
++ R67.2
+*net NN_0056
++ R64.2
++ Q5.2
++ R68.2
+*net NN_0057
++ R71.1
++ Q8.3
++ M8.2
+*net NN_0058
++ L8.2
++ M24.3
++ M25.3
+*net NN_0059
++ R100.2
++ R101.2
++ Q17.1
++ M24.1
++ R102.2
++ Q18.3
+*net NN_0060
++ R99.2
++ R101.1
++ Q17.2
+*net NN_0061
++ R99.1
++ Q19.1
+*net NN_0062
++ R100.1
++ Q20.2
++ Q21.3
+*net NN_0063
++ Q17.3
++ M24.2
++ R105.2
+*net NN_0064
++ R102.1
++ Q18.2
++ Q19.2
++ Q20.3
+*net NN_0065
++ R103.2
++ Q18.1
+*net NN_0066
++ R103.1
++ Q22.2
++ R107.2
+*net NN_0067
++ R104.2
++ Q21.2
++ R106.2
+*net NN_0068
++ R105.1
++ Q22.3
++ M25.2
+*net NN_0069
++ L10.1
++ M12.2
++ R81.1
++ D16.1
+*net NN_0070
++ L10.2
++ M12.1
++ D15.1
+*net NN_0071
++ M12.3
++ R84.1
++ M13.2
+*net NN_0072
++ D15.2
++ D16.2
++ R84.2
++ C9.2
+*net NN_0073
++ L11.1
++ M18.2
++ R90.1
++ D22.1
+*net NN_0074
++ L11.2
++ M18.1
++ D21.1
+*net NN_0075
++ M18.3
++ R91.1
++ M19.2
+*net NN_0076
++ D21.2
++ D22.2
++ R91.2
++ C11.2
+*net NN_0077
++ L12.1
++ M20.2
++ R93.1
++ D26.1
+*net NN_0078
++ L12.2
++ M20.1
++ D25.1
+*net NN_0079
++ M20.3
++ R94.1
++ M21.2
+*net NN_0080
++ D25.2
++ D26.2
++ R94.2
++ C12.2
+*net NN_0081
++ L13.1
++ M22.2
++ R96.1
++ D30.1
+*net NN_0082
++ L13.2
++ M22.1
++ D29.1
+*net NN_0083
++ M22.3
++ R97.1
++ M23.2
+*net NN_0084
++ D29.2
++ D30.2
++ R97.2
++ C13.2
+*net NN_0085
++ M1.3
++ M3.3
+*net NN_0086
++ M2.1
++ R14.1
+*net NN_0087
++ L4.1
++ L5.2
+*net NN_0088
++ L4.2
++ L3.1
+*net NN_0089
++ M1.1
++ R13.1
+*net NN_0090
++ M3.1
++ R17.1
+*net NN_0091
++ M4.1
++ R16.1
+*net V_sence
++ R22.1
++ R19.1
++ L2.1
++ C3.1
++ R18.1
+*End

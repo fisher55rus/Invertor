@@ -1,21 +1,21 @@
-* C:\Workspace_git\Invertor\Orcad\8_W_and_I_on_VT2\1STK.sch
+* D:\GIT\MAI\Invertor\Orcad\8_W_and_I_on_VT2\1STK.sch
 
 * Schematics Version 9.2
-* Mon Mar 04 17:02:47 2019
+* Sun Apr 21 17:48:25 2019
 
 
 
 ** Analysis setup **
-.tran 0ns 10m 0 1.57u SKIPBP
+.tran 0ns 5m 0 1.57u SKIPBP
 .OPTIONS ABSTOL=1uA
 .OPTIONS ITL4=60
-.LIB "C:\Workspace_git\Invertor\Orcad\8_W_and_I_on_VT2\1STK.lib"
+.LIB "D:\GIT\MAI\Invertor\Orcad\8_W_and_I_on_VT2\1STK.lib"
 
 
-* From [PSPICE NETLIST] section of C:\Program Files\Orcad\PSpice\PSpice.ini:
-.lib "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
+* From [PSPICE NETLIST] section of d:\Program Files\Orcad\PSpice\PSpice.ini:
+.lib "D:\Program Files\Orcad\PSpice\UserLib\OPA_2.lib"
+.lib "D:\Program Files\Orcad\PSpice\UserLib\MyLib.lib"
 .lib "nom.lib"
-.inc "C:\Program Files\Orcad\PSpice\UserLib\Mylib.lib"
 
 .INC "1STK.net"
 
